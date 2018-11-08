@@ -1,6 +1,6 @@
 <body>
 
-    <link type="text/css" rel="stylesheet" href='/aplicacion/Estilos/dist/css/jquery-entropizer.min.css' />
+    <link type="text/css" rel="stylesheet" href='Estilos/dist/css/jquery-entropizer.min.css' />
 
     <style type="text/css">
         #meter2 .entropizer-track {
@@ -50,8 +50,8 @@
     }
 
     </script>
-    
-       
+
+
 
     <script>
         function checar_1(e_1) {
@@ -227,8 +227,8 @@
                                         'value'     =>  1,
                                         'required'  => 'required',
                                         'class'     =>  'validate' ,
-                                        'style'     => 'display:none' 
-                                        );                
+                                        'style'     => 'display:none'
+                                        );
                                     echo form_input($tipo_usuario);
                                 ?>
                                 <!--Campo apellido paterno-->
@@ -268,7 +268,7 @@
                                 </div>
 
                                 <div class="input-field col m4 s12">
-                                    <?php 
+                                    <?php
                                         $name_user=array(
                                             'name'      =>  'Nombre',
                                             'id'        =>  'id_nom_U',
@@ -360,11 +360,11 @@
                                             'name'      =>  'Fecha_Nacimiento',
                                             'id'        =>  'id_fechaN_U',
                                             'type'      =>  'text',
-                                            'required'  =>  'required',                                            
+                                            'required'  =>  'required',
                                             'class'     =>  'validate datepicker',
                                             'title'     =>  'Fecha de nacimiento',
                                             'oninvalid' =>  "setCustomValidity('¡Nos gustaria saber cuando cumples años!, clickea para abrir el calendario ')",
-                                            'oninput'   =>  "setCustomValidity('')");   
+                                            'oninput'   =>  "setCustomValidity('')");
                                             /*$js = 'onClick="some_function()"';*/
                                         $funtion_birth = 'onkeypress="return checar_1(event)"';
                                         echo form_input($dateN_user, ($this->input->post('Tipo_User')==1)?$this->input->post('Fecha_Nacimiento'):"",$funtion_birth);
@@ -379,7 +379,7 @@
                                     <?php
                                         $phone_user=array(
                                             'name'      =>  'Telefono',
-                                            'id'        =>  'id_tel_U',                                      
+                                            'id'        =>  'id_tel_U',
                                             'type'      =>  'text',
                                             'required'  =>  'required',
                                             'class'     =>  'validate',
@@ -439,10 +439,10 @@
                                 </div>
 
                                 <div class="input-field col m4 s12">
-                                    <?php 
+                                    <?php
                                         $pass_1 = array (
-                                            'name'      => 'Passwd',   
-                                            'id'        => 'pass_id_U1',        
+                                            'name'      => 'Passwd',
+                                            'id'        => 'pass_id_U1',
                                             'class'     => 'validate form-control',
                                             'required'  => 'required',
                                             'oninvalid' =>  "setCustomValidity('Es para estar seguros')",
@@ -456,7 +456,7 @@
                                 <div class="input-field col m4 s12">
                                     <?php
                                     $pass_2 = array (
-                                        'name'      => 'Passwd2',   
+                                        'name'      => 'Passwd2',
                                         'id'        => 'pass_id_U2',
                                         'class'     => 'validate form-control',
                                         'required'  => true,
@@ -514,7 +514,7 @@
                                 <div class="col m12 s12 grey-text text-grey darken-4" ALIGN="center"><br><br> Toma esto en cuenta, ¡es la fuerza de tu contraseña!</div>
                                 <div id="meter1" class="col m12 s12 center" ALIGN="center"><br></div>
                             </div>
-                            
+
                             <br>
                             <center>
                                 <div class="preloader-wrapper big active" id="loading" >
@@ -567,7 +567,7 @@
                                     </div>
                                 </div>
                             </center>
-                            
+
 
 
                             <br><br>
@@ -592,7 +592,7 @@
                                 <br><br><br><br><br>
                                 <div class="col s12 m12" ALIGN="center">
 
-                                    <?php 
+                                    <?php
                                     $option_button = array (
                                             'class'     => 'btn waves-effect waves-light deep-orange darken-3',
                                             'type'      => 'submit',
@@ -602,7 +602,7 @@
                                 ?>
                                 </div>
 
-          
+
                             </div>
                             <?= form_close() ?>
                         </div>
@@ -646,7 +646,7 @@
                                         'value'     =>  2,
                                         'required'  => true,
                                         'class'     =>  'validate' ,
-                                        'style'     => 'display:none');                
+                                        'style'     => 'display:none');
                                     echo form_input($tipo_usuario);
                             ?>
 
@@ -661,7 +661,7 @@
                                             'class'     =>  'validate' ,
                                             'title'     =>  'Apellido Paterno',
                                             'oninvalid' =>  "setCustomValidity('Deberas ingresar tu apellido Paterno')",
-                                            'oninput'   =>  "setCustomValidity('')");                
+                                            'oninput'   =>  "setCustomValidity('')");
                                         echo form_input($pat_user, ($this->input->post('Tipo_User')==2)?$this->input->post('Ap_Paterno'):"", $function_pmn);
                                         echo form_label('Apellido Paterno', 'id_pat_B');
                                         echo ($this->input->post('Tipo_User')==2)?form_error('Ap_Paterno', '<span class="helper-text"style="color:red;">', '</span>'):"";
@@ -688,7 +688,7 @@
                                 </div>
 
                                 <div class="input-field col m4 s12">
-                                    <?php 
+                                    <?php
                                         $name_user=array(
                                             'name'  =>  'Nombre',
                                             'id'    =>  'id_nom_UB',
@@ -716,7 +716,7 @@
                                         'class' =>  'validate datepicker' ,
                                         'title' =>  'Fecha de Nacimiento',
                                         'oninvalid' =>  "setCustomValidity('¡Nos gustaria saber cuando cumples años!, clickea para abrir el calendario ')",
-                                        'oninput'   =>  "setCustomValidity('')");             
+                                        'oninput'   =>  "setCustomValidity('')");
                                     echo form_input($dateN_user,($this->input->post('Tipo_User')==2)?$this->input->post('Fecha_Nacimiento'):"",$funtion_birth);
                                     echo form_label('Fecha de nacimiento (Presioname)','id_fechaN_B');
                                     echo ($this->input->post('Tipo_User')==2)?form_error('Fecha_Nacimiento', '<span class="helper-text"style="color:red;">', '</span>'):"";
@@ -765,19 +765,19 @@
                                 </div>
                                 <div class="col m4 s12"></div>
                             </div>
-                            
-                            <h5 ALIGN="center">Información de Inicio de Sesión</h5>
-                            
 
-         
-                  
+                            <h5 ALIGN="center">Información de Inicio de Sesión</h5>
+
+
+
+
                                     <div class="col s12">
                                         <p ALIGN="center">El correo que nos proporciones estará asociado a la beneficiencia que representas.
                                         </p>
                                     </div>
-                          
-                    
-                                
+
+
+
                             </div>
 
                             <div class="row">
@@ -800,9 +800,9 @@
 
                                 <div class="input-field col m4 s12">
 
-                                    <?php 
+                                    <?php
                                         $pass_1 = array (
-                                                'name' => 'Passwd',   
+                                                'name' => 'Passwd',
                                                 'id'   => 'pass_id_B1',
                                                 'type'  =>  'password',
                                                 'required' => true,
@@ -818,7 +818,7 @@
                                 <div class="input-field col m4 s12">
                                     <?php
                                     $pass_2 = array (
-                                        'name' => 'Passwd2',   
+                                        'name' => 'Passwd2',
                                         'id'   => 'pass_id_B2',
                                         'type' => 'password',
                                         'required' => 'true',
@@ -897,7 +897,7 @@
                                         'class' =>  "validate" ,
                                         'title' =>  "Nombre del centro de Adopción",
                                         'oninvalid' =>  "setCustomValidity('Nosotros somos aRDog, ¿Ustedes?')",
-                                        'oninput'   =>  "setCustomValidity('')");                
+                                        'oninput'   =>  "setCustomValidity('')");
                                     echo form_input($nom_B,$this->input->post('NombreB'),$funtion_txtfil);
                                     echo form_label('Nombre del centro de Adopción', 'id_nom_B');
                                     echo form_error('NombreB', '<span class="helper-text"style="color:red;">', '</span>');
@@ -934,7 +934,7 @@
                                         'class' =>  "validate" ,
                                         'title' =>  "Dirección: Calle/ #/ Col/ CP/Ciudad",
                                         'oninvalid' =>  "setCustomValidity('Posiblemente la gente necesite saberlo')",
-                                        'oninput'   =>  "setCustomValidity('')"); 
+                                        'oninput'   =>  "setCustomValidity('')");
                                         $funtion_addr = 'onkeypress="return checar_3(event)"';
                                     echo form_input($dir_B,$this->input->post('DireccionB'),$funtion_addr);
                                     echo form_label('Dirección: Calle/ #/ Col/ CP/Ciudad', 'dir_B');
@@ -968,7 +968,7 @@
 
                             </script>
                         </div>
-                        
+
                         <br>
                             <center>
                                 <div class="preloader-wrapper big active" id="loading_1" >
@@ -1036,7 +1036,7 @@
                             <br><br><br><br><br>
                             <div class="col s12 m12" ALIGN="center">
 
-                                <?php 
+                                <?php
                                     $option_button = array (
                                             'class'     => 'btn waves-effect waves-light deep-orange darken-3',
                                             'type'      => 'submit',
@@ -1114,7 +1114,7 @@
         });
 
     </script>
-    
+
     <script>
         $(document).ready(function() {
             $('#loading_1').hide();
@@ -1124,5 +1124,3 @@
         });
 
     </script>
-    
- 

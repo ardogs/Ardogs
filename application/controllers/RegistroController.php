@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class RegistroController extends CI_Controller {
 		function __construct(){
 			parent::__construct();
-			
+
 			header( 'X-Content-Type-Options: nosniff' );
     		header( 'X-Frame-Options: SAMEORIGIN' );
     		header( 'X-XSS-Protection: 1;mode=block' );
@@ -13,11 +13,13 @@ class RegistroController extends CI_Controller {
 
 			$this->load->model('Usuario');
 			$this->load->library('form_validation');
-			$this->load->helper('form');	
+			$this->load->helper('form');
 			$this->load->helper('url');
 
+
+
 		}
-	
+
 	function index(){
 			if($this->session->userdata('user')){
                 redirect('InicioController');
@@ -32,7 +34,7 @@ class RegistroController extends CI_Controller {
 					case '1':
 						$this->form_validation->set_rules('Ap_Paterno'		, '', 'trim|xss_clean|required|alpha');
 					    $this->form_validation->set_rules('Ap_Materno'		, '', 'trim|xss_clean|required|alpha');
-					    $this->form_validation->set_rules('Nombre'			, '', 'trim|xss_clean|required'); 
+					    $this->form_validation->set_rules('Nombre'			, '', 'trim|xss_clean|required');
 					    $this->form_validation->set_rules('Passwd'			, '', 'trim|xss_clean|required|min_length[8]');
 					    $this->form_validation->set_rules('Passwd2'			, '', 'trim|xss_clean|required|matches[Passwd]');
 					    $this->form_validation->set_rules('Correo'			, '', 'trim|xss_clean|required|is_unique[Usuario.Correo]|valid_email');
@@ -43,7 +45,7 @@ class RegistroController extends CI_Controller {
 				        if($this->form_validation->run()==false){
 							$this->load->view('Templates/header', $dato);
 							$this->load->view('Registro/RegistroView');
-							$this->load->view('Templates/footer'); 	
+							$this->load->view('Templates/footer');
 				        }
 				        else{
 
@@ -52,12 +54,22 @@ class RegistroController extends CI_Controller {
 				        	$link= base_url('RegistroController/activarCuentaUser/');
 				        	$link.=$id;
 	                        $data['link']= $link;
-				        	
+
 				        	$CI = & get_instance();
 	                        $CI->load->helper('url');
 	                        $CI->load->library('session');
 	                        $CI->config->item('base_url');
 	                        $CI->load->library('email');
+
+													$CI->email->initialize(array(
+													  'protocol' => 'smtp',
+													  'smtp_host' => 'smtp.sendgrid.net',
+													  'smtp_user' => 'app114306222@heroku.com',
+													  'smtp_pass' => 'fcptulix8763',
+													  'smtp_port' => 587,
+													  'crlf' => "\r\n",
+													  'newline' => "\r\n"
+													));
 
 	                        $subject = 'Bienvenido a ARDOG';
 
@@ -75,14 +87,14 @@ class RegistroController extends CI_Controller {
 	                        else{
 	                          echo $CI->email->print_debugger();
 	                        }
-								                                
+
 				        }
 					break;
 
 					case '2':
 						$this->form_validation->set_rules('Ap_Paterno'		, '', 'trim|xss_clean|required|alpha');
 					    $this->form_validation->set_rules('Ap_Materno'		, '', 'trim|xss_clean|required|alpha');
-					    $this->form_validation->set_rules('Nombre'			, '', 'trim|xss_clean|required'); 
+					    $this->form_validation->set_rules('Nombre'			, '', 'trim|xss_clean|required');
 					    $this->form_validation->set_rules('Passwd'			, '', 'trim|xss_clean|required|min_length[8]');
 					    $this->form_validation->set_rules('Passwd2'			, '', 'trim|xss_clean|required|matches[Passwd]');
 					    $this->form_validation->set_rules('Correo'			, '', 'trim|xss_clean|required|is_unique[Usuario.Correo]|valid_email');
@@ -91,15 +103,15 @@ class RegistroController extends CI_Controller {
 					    $this->form_validation->set_rules('Telefono'		, '', 'trim|xss_clean|required|is_natural|exact_length[10]');
 
 				        $this->form_validation->set_rules('NombreB'			, '', 'trim|xss_clean|required');
-				        
-				        $this->form_validation->set_rules('DireccionB'		, '', 'trim|xss_clean|required'); 
+
+				        $this->form_validation->set_rules('DireccionB'		, '', 'trim|xss_clean|required');
 				        $this->form_validation->set_rules('DescripcionB'	, '', 'trim|xss_clean|required');
 				        $this->form_validation->set_rules('TelefonoB'		, '', 'trim|xss_clean|required|is_natural|exact_length[10]');
 
 				        if($this->form_validation->run()==false){
 							$this->load->view('Templates/header', $dato);
 							$this->load->view('Registro/RegistroView');
-							$this->load->view('Templates/footer'); 	
+							$this->load->view('Templates/footer');
 				        }
 				        else{
 
@@ -107,9 +119,9 @@ class RegistroController extends CI_Controller {
 				        	$id = $this->Usuario->getIdUserByCorreo($this->input->post('Correo'));
 				        	$link= base_url('RegistroController/activarCuentaUserBenef/');
 				        	$link.=$id;
-	                        
+
 	                        $data['link']=$link;
-				        	
+
 				        	$CI = & get_instance();
 	                        $CI->load->helper('url');
 	                        $CI->load->library('session');
@@ -132,14 +144,14 @@ class RegistroController extends CI_Controller {
 	                        else{
 	                        	echo $CI->email->print_debugger();
 	                        }
-							
+
 				        }
-					break;	
+					break;
 
 					default:
 				 		$this->load->view('Templates/header', $dato);
 						$this->load->view('Registro/RegistroView');
-						$this->load->view('Templates/footer'); 	
+						$this->load->view('Templates/footer');
 					break;
 				}
 		}
@@ -154,18 +166,18 @@ class RegistroController extends CI_Controller {
 					if($this->Usuario->getStatusById($id)==0){
 						$this->Usuario->updateUserToActive($result['Correo']);
 
-					    $this->load->view('Registro/mensaje');	
+					    $this->load->view('Registro/mensaje');
 					}
 					else{
 						$this->load->view('Registro/post_confirmacion');
 					}
-					
+
 			}
 			else{
 					$this->load->view('Registro/error_mensaje');
 			}
 		}
-		
+
 
 		function activarCuentaUserBenef($id){
 
@@ -177,7 +189,7 @@ class RegistroController extends CI_Controller {
 						$this->Usuario->updateUserBenefToActive($result['Correo']);
 
 						$this->load->view('Registro/mensaje');
-					}	
+					}
 					else{
 						$this->load->view('Registro/post_confirmacion');
 					}
@@ -187,8 +199,8 @@ class RegistroController extends CI_Controller {
 			}
 		}
 
-		
-		
+
+
 	//http://localhost/aplicacion/RegistroController/activarCuentaUser/54
 	//http://localhost/aplicacion/RegistroController/activarCuentaUserBenef/54
 }
