@@ -110,7 +110,7 @@ class LoginController extends CI_Controller {
 	                        $msg = $CI->load->view('Inicio/recuperacion_mail',$data, true);
 
 	                        if($CI->email
-	                                ->from('Ardogs')
+	                                ->from('johndan478@gmail.com')
 	                                ->to($this->input->post('Correo'))
 	                                ->subject($subject)
 	                                ->message($msg)

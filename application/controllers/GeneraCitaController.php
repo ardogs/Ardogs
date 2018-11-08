@@ -75,7 +75,7 @@ class GeneraCitaController extends CI_Controller {
             $msg = $CI->load->view('Adopta/CorreoAdoptaView',$data, true);
 
             if($CI->email
-                    ->from('Ardogs')
+                    ->from('johndan478@gmail.com')
                     ->to($Correo)
                     ->subject($subject)
                     ->message($msg)
