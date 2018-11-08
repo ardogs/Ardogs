@@ -5,24 +5,24 @@ class GeneraCitaController extends CI_Controller {
 		function __construct(){
 			parent::__construct();
 			$this->load->library('form_validation');
-			$this->load->helper('form');	
+			$this->load->helper('form');
 			$this->load->helper('url');
 			$this->load->model('Perro');
 			$this->load->model('Cita');
 		}
-	
+
 		function index($id_dog = ""){
 			$dato['string'] = "aRDog | Generar Cita";
 
 			if($id_dog==null)//argumento nulo desde url
 				redirect('AdoptaController');
-			
+
 			$Info['Perro']=$this->Perro->getPerroById($id_dog);//cargando informacion del perro
 			$Info['Benef']=$this->Perro->getBenefPerroById($Info['Perro']['Id_Beneficencia']);
 
 			if(!$Info['Perro'])//argumento por url invalido
 				redirect('AdoptaController');
-			
+
 			if($Info['Perro']['Status']!='2')//perro no disponible (adoptado o con cita)
 				redirect('AdoptaController');
 
@@ -38,13 +38,13 @@ class GeneraCitaController extends CI_Controller {
 			else{
 				$this->Perro->updateStatusPerro($Info['Perro']['Id_Perro'],'1');
 				$this->Cita->insertNewCita($this->input->post(),$Info['Perro']);
-				
+
 				extract($this->session->userdata('user'));
 				$id_cita=$this->Cita->getIdCitaByIdUser($Id_User)['Id_Cita'];
 				$this->enviarCorreoCita($id_cita);
 				$this->load->view('Adopta/ConfirmarEnvioView');//todo salio bien y se manda mensaje de exito
 			}
-			
+
 		}
 
 		function enviarCorreoCita($id_cita){
@@ -60,12 +60,22 @@ class GeneraCitaController extends CI_Controller {
             $CI->config->item('base_url');
             $CI->load->library('email');
 
+						$CI->email->initialize(array(
+							'protocol' => 'smtp',
+							'smtp_host' => 'smtp.sendgrid.net',
+							'smtp_user' => 'app114306222@heroku.com',
+							'smtp_pass' => 'fcptulix8763',
+							'smtp_port' => 587,
+							'crlf' => "\r\n",
+							'newline' => "\r\n"
+						));
+
             $subject = 'Confirmación de Cita (ARDog)';
 
             $msg = $CI->load->view('Adopta/CorreoAdoptaView',$data, true);
 
             if($CI->email
-                    ->from('johndan478@gmail.com')
+                    ->from('Ardogs')
                     ->to($Correo)
                     ->subject($subject)
                     ->message($msg)
@@ -86,5 +96,3 @@ class GeneraCitaController extends CI_Controller {
 }
 
 ?>
-
-
