@@ -61,6 +61,15 @@ class RegistroController extends CI_Controller {
 	                        $CI->config->item('base_url');
 	                        $CI->load->library('email');
 
+													$CI->email->initialize(array(
+													  'protocol' => 'smtp',
+													  'smtp_host' => 'smtp.sendgrid.net',
+													  'smtp_user' => 'SENDGRID_USERNAME',
+													  'smtp_pass' => 'SENDGRID_PASSWORD',
+													  'smtp_port' => 587,
+													  'crlf' => "\r\n",
+													  'newline' => "\r\n"
+													));
 
 
 	                        $subject = 'Bienvenido a ARDOG';
@@ -120,7 +129,15 @@ class RegistroController extends CI_Controller {
 	                        $CI->config->item('base_url');
 	                        $CI->load->library('email');
 
-													
+													$CI->email->initialize(array(
+													  'protocol' => 'smtp',
+													  'smtp_host' => 'smtp.sendgrid.net',
+													  'smtp_user' => 'SENDGRID_USERNAME',
+													  'smtp_pass' => 'SENDGRID_PASSWORD',
+													  'smtp_port' => 587,
+													  'crlf' => "\r\n",
+													  'newline' => "\r\n"
+													));
 
 	                        $subject = 'Bienvenido a mi ARDOG';
 
