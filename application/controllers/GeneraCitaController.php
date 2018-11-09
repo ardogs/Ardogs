@@ -60,11 +60,14 @@ class GeneraCitaController extends CI_Controller {
             $CI->config->item('base_url');
             $CI->load->library('email');
 
+						$user = getenv('SENDGRID_USERNAME');
+						$pass = getenv('SENDGRID_PASSWORD');
+
 						$CI->email->initialize(array(
 							'protocol' => 'smtp',
 							'smtp_host' => 'smtp.sendgrid.net',
-							'smtp_user' => getenv('SENDGRID_USERNAME'),
-							'smtp_pass' => getenv('SENDGRID_PASSWORD'),
+							'smtp_user' => $user,
+							'smtp_pass' => $pass,
 							'smtp_port' => 587,
 							'crlf' => "\r\n",
 							'newline' => "\r\n"
