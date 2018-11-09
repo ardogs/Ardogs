@@ -60,15 +60,7 @@ class GeneraCitaController extends CI_Controller {
             $CI->config->item('base_url');
             $CI->load->library('email');
 
-						$CI->email->initialize(array(
-							'protocol' => 'smtp',
-							'smtp_host' => 'smtp.sendgrid.net',
-							'smtp_user' => 'app114306222@heroku.com',
-							'smtp_pass' => 'fcptulix8763',
-							'smtp_port' => 587,
-							'crlf' => "\r\n",
-							'newline' => "\r\n"
-						));
+						
 
             $subject = 'Confirmación de Cita (ARDog)';
 
