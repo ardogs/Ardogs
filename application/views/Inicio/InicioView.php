@@ -19,29 +19,29 @@
         <ul class="slides">
             <li>
                 <div class="caption center-align">
-                    <h3>Magia y akjgedfasd!</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    <h3>aRDogs en todos lados!</h3>
+                    <h5 class="light grey-text text-lighten-3">Comprende</h5>
                 </div>
             </li>
 
             <li>
                 <div class="caption left-align">
-                    <h3>Magia!</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    <h3>aRDogs</h3>
+                    <h5 class="light grey-text text-lighten-3">Adopta.</h5>
                 </div>
             </li>
 
             <li>
                 <div class="caption right-align">
-                    <h3>Más magia!</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    <h3>Más aRDogs!</h3>
+                    <h5 class="light grey-text text-lighten-3">Rescata</h5>
                 </div>
             </li>
 
             <li>
                 <div class="caption center-align">
-                    <h3>Magia y patadita!</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    <h3>aRDogs en la web!</h3>
+                    <h5 class="light grey-text text-lighten-3">Ayuda</h5>
                 </div>
             </li>
         </ul>
@@ -106,7 +106,7 @@
             <h1 ALIGN="center">Misión</h1>
             <br>
             <br>
-            <p ALIGN="justify">Nuestra visión es encontrar hogar para todos los perros callejeros en el estado, ya que, ellos al igual que nosotros, tienen derecho a la salud, a un hogar y al amor que ofrece una familia. Nuestros usuarios deben de ser capaces de dar amor, tiempo y espacio a nuestros perros, y comprometerse a cuidarlos una vez que han sido adoptados.  
+            <p ALIGN="center">Nuestra visión es encontrar hogar para todos los perros callejeros en el estado, ya que, ellos al igual que nosotros, tienen derecho a la salud, a un hogar y al amor que ofrece una familia. Nuestros usuarios deben de ser capaces de dar amor, tiempo y espacio a nuestros perros, y comprometerse a cuidarlos una vez que han sido adoptados.
             </p>
             <br>
             <br>
@@ -129,7 +129,7 @@
             <h1 ALIGN="center">Visión</h1>
             <br>
             <br>
-            <p ALIGN="justify">Nuestro objetivo a corto plazo es darnos a conocer entre la comunidad y entre los refugios de perros callejeros, así como fomentar la adopción en las familias. A largo plazo, quisiéramos expandir el servicio, a todo el país, eliminando así la tasa de perros callejeros sacrificados por falta de hogar y expandir el servicio para otro tipo de animales como gatos.
+            <p ALIGN="center">Nuestro objetivo a corto plazo es darnos a conocer entre la comunidad y entre los refugios de perros callejeros, así como fomentar la adopción en las familias. A largo plazo, quisiéramos expandir el servicio, a todo el país, eliminando así la tasa de perros callejeros sacrificados por falta de hogar y expandir el servicio para otro tipo de animales como gatos.
             </p>
             <br>
             <br>
@@ -151,10 +151,16 @@
             <h1 ALIGN="center">Valores</h1>
             <br>
             <br>
-            <p ALIGN="justify">Respeto: hacia la vida ajena, no solo hacia otros seres humanos.
-            Amor: fomentar el amor hacia otros seres vivos aumenta nuestra empatía, nos permite ser mejores seres humanos.
-            Responsabilidad: fomentar en la familia la responsabilidad que representa tener una mascota, ayuda principalmente a los niños y ayuda a su formación futura.
-            </p>
+
+                    <ul ALIGN="center">
+                       <li ><b>Respeto: </b>Hacia la vida ajena, no solo hacia otros seres humanos.</li>
+                       <li><b>Amor: </b>Fomentar el amor hacia otros seres vivos aumenta nuestra empatía, nos permite ser mejores seres humanos.</li>
+                       <li><b>Responsabilidad: </b>fomentar en la familia la responsabilidad que representa tener una mascota, ayuda principalmente a los niños y ayuda a su formación futura.</li>
+
+                    </ul>
+
+
+
             <br>
             <br>
             <br>
