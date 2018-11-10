@@ -52,7 +52,7 @@
 
                         <div class="collapsible-body">
                             <i class="tiny material-icons">arrow_forward</i>
-                            <span>
+                            <span ALIGN="justify">
                             <?php echo $pregunta['Respuesta']?>
                             </span>
                         </div>
