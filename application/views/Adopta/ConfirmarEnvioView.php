@@ -12,6 +12,7 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="icon" href="https://image.ibb.co/dEEbaA/baidu-logotipo-de-la-pata-2.png">
 
     <div class="navbar-fixed">
         <nav class="grey darken-4">
@@ -53,7 +54,7 @@
             <p ALIGN="justify">Si todo ha salido bien, has recibido un gran mensaje en tu correo. En ese mensaje encontraras algunas cosas escenciales y de suma importancia para tu futura cita, recuerda seguir todas las inctrucciones que te hemos mandado al pie de la letra. ¡Gracias!</p>
             <br>
 
-            
+
             <center>
                 <a  href="<?=base_url()?>InicioController" class="waves-effect waves-teal btn-flat">Volver al inicio</a>
             </center>

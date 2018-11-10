@@ -12,6 +12,7 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="icon" href="https://image.ibb.co/dEEbaA/baidu-logotipo-de-la-pata-2.png">
 
     <div class="navbar-fixed">
         <nav class="grey darken-4">
@@ -53,7 +54,7 @@
             <p ALIGN="justify">Nos gustaria decirte que no tienes que confirmar siempre tu correo, puedes iniciar sesion con un click en el boton de abajo.</p>
             <br>
 
-            
+
             <center>
                 <a  href="<?=base_url()?>LoginController" class="waves-effect waves-teal btn-flat">Inicia Sesión</a>
             </center>

@@ -12,11 +12,12 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="icon" href="https://image.ibb.co/dEEbaA/baidu-logotipo-de-la-pata-2.png">
 </head>
 
-<style> 
-body { background: url(https://image.ibb.co/m4vDuz/pexels_photo_1378849.jpg) center fixed no-repeat} 
-</style> 
+<style>
+body { background: url(https://image.ibb.co/m4vDuz/pexels_photo_1378849.jpg) center fixed no-repeat}
+</style>
 
 <body class="responsive-img">
 
@@ -39,16 +40,16 @@ body { background: url(https://image.ibb.co/m4vDuz/pexels_photo_1378849.jpg) cen
 
                 <a href="<?=base_url()?>InicioController" class="brand-logo" ALIGN="center">
                    <center>
-                        <img width="250" height="62"  src="https://image.ibb.co/dtKSaK/logo_mail.png">   
+                        <img width="250" height="62"  src="https://image.ibb.co/dtKSaK/logo_mail.png">
                    </center>
-                    
+
                 </a>
                 <h4 ALIGN="center">¡Bienvenido!</h4>
 
                 <p ALIGN="center">
                     <font size=2 COLOR="#757575"> <br>Inicia sesíon para poder conocer a todos nuestros amigos</font>
                 </p>
-         
+
 
                 <div class="row">
                     <div class="container">
