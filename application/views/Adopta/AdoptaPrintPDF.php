@@ -120,7 +120,7 @@
 <?php
 
   $content = ob_get_clean();
-  require_once __DIR__.'vendor/autoload.php';
+  require'vendor/autoload.php';
   try
   {
       $html2pdf = new HTML2PDF('P', 'A4', 'es', true, 'UTF-8', 3);
