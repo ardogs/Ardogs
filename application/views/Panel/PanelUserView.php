@@ -113,9 +113,9 @@
 
 
 
-            <center>
-                <img width="200" height="200" class="responsive-img" src="https://image.ibb.co/nvtOvU/Logo_2.png" ALIGN="center">
-            </center>
+<center>
+    <img width="200" height="200" class="responsive-img" src="https://image.ibb.co/nvtOvU/Logo_2.png" ALIGN="center">
+</center>
 
 
 
@@ -126,11 +126,12 @@
 <p ALIGN="center">Controla tus citas, modifica tu informacion personal y de inicio de sesión.</p>
 <br>
 
-    <script>
-        function vistActiva(tipo){
-            $('#Activa_Id').val(tipo);
-        }
-    </script>
+<script>
+    function vistActiva(tipo) {
+        $('#Activa_Id').val(tipo);
+    }
+
+</script>
 
 
 <div class="container">
@@ -158,7 +159,7 @@
                                     <th>Hora</th>
                                     <th>Estado</th>
                                     <th>Acción</th>
-                                    
+
                                 </tr>
                             </thead>
 
@@ -169,68 +170,87 @@
                                     foreach ($Citas_User as $fila) {
                                 ?>
                                 <tr>
-                                <th> <FONT SIZE=2 COLOR='#616A6B'><?php echo $fila['Id_Cita']?></FONT></th>
-                                <th> <FONT SIZE=2 COLOR='#616A6B'><?php echo $fila['Id_Perro']?></FONT></th>
-                                <th> <FONT SIZE=2 COLOR='#616A6B'><?php echo $fila['Nombre_Perro']?></FONT></th>
-                                <th> <FONT SIZE=2 COLOR='#616A6B'><?php echo $fila['NombreB']?></FONT></th>
-                                <th> <FONT SIZE=2 COLOR='#616A6B'><?php echo $fila['Fecha']?></FONT></th>
-                                <th> <FONT SIZE=2 COLOR='#616A6B'><?php echo $fila['Hora']?></FONT></th>
-                                <th> 
-                                     <?php
-                                     if($fila['Status']==2) 
-                                        echo "<FONT SIZE=2 COLOR='#2ECC71'>COMPLETADA</FONT>";
-                                     else if($fila['Status']==1) 
-                                        echo "<FONT SIZE=2 COLOR='#F4D03F'>EN PROCESO</FONT>";  
-                                     else 
-                                        echo "<FONT SIZE=2 COLOR='#C0392B'>CANCELADA</FONT>";
+                                    <td>
+                                        <?php echo $fila['Id_Cita']?>
+                                    </td>
+                                    <td>
+                                        <?php echo $fila['Id_Perro']?>
+                                    </td>
+                                    <td>
+                                        <?php echo $fila['Nombre_Perro']?>
+                                    </td>
+                                    <td>
+                                        <?php echo $fila['NombreB']?>
+                                    </td>
+                                    <td>
+                                        <?php echo $fila['Fecha']?>
+                                    </td>
+                                    <td>
+                                        <?php echo $fila['Hora']?>
+                                    </td>
+                                    <td>
+                                        <?php
+                                     if($fila['Status']==2)
+                                        echo '<FONT COLOR="#43a047"><i class="material-icons tooltipped" data-tooltip="Completada" data-position="top">check</i></FONT>';
+                                     else if($fila['Status']==1)
+                                        echo '<FONT COLOR="#c0ca33"><i class="material-icons tooltipped" data-tooltip="En proceso" data-position="left">autorenew</i></FONT>';
+                                     else
+                                        echo '<FONT COLOR="red"><i class="material-icons tooltipped" data-tooltip="Cancelada" data-position="right">close</i></FONT>';
                                      ?>
-                                </th>
-                                <th>
-                                    <?php 
+                                    </td>
+                                    <td>
+                                        <?php
                                     if($fila['Status']==1) {
                                     ?>
-                                    <button data-target="modal<?php echo $contModel?>" class="btn modal-trigger red darken-3">Cancelar Cita</button>
 
-                                    <div id="modal<?php echo $contModel?>" class="modal modal-fixed-footer">
-                                        <div class="modal-content">
-                                            <div class="row">
-                                                <div class="col s12 m12">
+                                        <a data-target="modal<?php echo $contModel?>" class="btn-flat modal-trigger waves-effect waves-red">
+                                            <FONT COLOR="red">Cancelar cita</FONT>
+                                        </a>
 
-                                                    <center>
-                                                        <img width="150" height="150" class="responsive-img" src="https://image.ibb.co/nvtOvU/Logo_2.png" ALIGN="center">
-                                                    </center>
 
-                                                    <h4 ALIGN="center">
-                                                        <FONT COLOR="red">¡Atención!</FONT>
-                                                    </h4>
-                                                    <p ALIGN="justify">Esta a punto de cancelar una de sus citas. Al precionar CONTINUAR, no podrá restablecerla por lo que tendrá que volver a realizar el proceso de hacer cita si asi lo desea. De clic fuera de la ventana para omitir.</p>
+                                        <div id="modal<?php echo $contModel?>" class="modal">
+                                            <div class="modal-content">
+                                                <div class="row">
+                                                    <div class="col s12 m12">
 
-                                                    <center>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                        <a href="<?php echo base_url()?>PanelController/cancelarCitaUser/<?php echo $fila['Id_Cita']?>">
-                                                            <font SIZE=4>
-                                                                CONTINUAR
-                                                            </font>
-                                                        </a>
-                                                    </center>
+                                                        <center>
+                                                            <img width="150" height="150" class="responsive-img" src="https://image.ibb.co/nvtOvU/Logo_2.png" ALIGN="center">
+                                                        </center>
+
+                                                        <h4 ALIGN="center">
+                                                            <FONT COLOR="red">¡Atención!</FONT>
+                                                        </h4>
+                                                        <p ALIGN="justify">Esta a punto de cancelar una de sus citas. Al precionar CONTINUAR, no podrá restablecerla por lo que tendrá que volver a realizar el proceso de hacer cita si asi lo desea. De clic fuera de la ventana para omitir.</p>
+
+
+                                                        <br>
+                                                        <a data-target="modal<?php echo $contModel?>" class="btn-flat modal-trigger waves-effect waves-red"></a>
+
+
+                                                            <center>
+                                                                <a href="<?php echo base_url()?>PanelController/cancelarCitaUser/<?php echo $fila['Id_Cita']?>" class="btn-flat modal-trigger waves-effect waves-red">
+                                                                <font COLOR="red" SIZE=4>
+                                                                    Continuar
+                                                                </font>
+                                                            </a>
+                                                            </center>
+                                                    </div>
                                                 </div>
                                             </div>
+
                                         </div>
-                                    </div>
-                                    <?php 
+                                        <?php
                                     $contModel++;
                                     }
                                     else echo "<FONT SIZE=4 COLOR='#616A6B'>---</FONT>";
                                     ?>
-                                       
-                                </th>
+
+                                    </td>
 
 
                                 </tr>
                                 <?php
-                                    } 
+                                    }
                                 }
                                 ?>
                             </tbody>
@@ -242,14 +262,14 @@
                     <div class="collapsible-header">
                         <h5>
                             <i class="material-icons">assignment_ind</i>
-                            Información Personal 
+                            Información Personal
                             <FONT SIZE=3 COLOR="#5AE80E">
                                 <?php echo (isset($actDatosCorrect))?"$actDatosCorrect":""; ?>
                             </FONT>
                             <FONT SIZE=3 COLOR="#D55F02">
                                 <?php echo (isset($actDatosIncorrect))?"$actDatosIncorrect":""; ?>
                             </FONT>
-                        
+
                         </h5>
                     </div>
                     <div class="collapsible-body">
@@ -274,8 +294,8 @@
                                         'value'     =>  2,
                                         'required'  => 'required',
                                         'class'     =>  'validate' ,
-                                        'style'     => 'display:none' 
-                                        );                
+                                        'style'     => 'display:none'
+                                        );
                                     echo form_input($vistaActiva);
                                 ?>
                                 <!--Campo apellido paterno-->
@@ -319,7 +339,7 @@
                                 </div>
 
                                 <div class="input-field col m4 s12">
-                                    <?php 
+                                    <?php
                                         $name_user=array(
                                             'name'      =>  'Nombre',
                                             'id'        =>  'id_nom_U',
@@ -413,11 +433,11 @@
                                             'name'      =>  'Fecha_Nacimiento',
                                             'id'        =>  'id_fechaN_U',
                                             'type'      =>  'text',
-                                            'required'  =>  'required',                                            
+                                            'required'  =>  'required',
                                             'class'     =>  'validate datepicker',
                                             'title'     =>  'Fecha de nacimiento',
                                             'oninvalid' =>  "setCustomValidity('¡Nos gustaria saber cuando cumples años!, clickea para abrir el calendario ')",
-                                            'oninput'   =>  "setCustomValidity('')");   
+                                            'oninput'   =>  "setCustomValidity('')");
                                             /*$js = 'onClick="some_function()"';*/
                                         $funtion_birth = 'onkeypress="return checar_1(event)"';
 
@@ -434,7 +454,7 @@
                                     <?php
                                         $phone_user=array(
                                             'name'      =>  'Telefono',
-                                            'id'        =>  'id_tel_U',                                      
+                                            'id'        =>  'id_tel_U',
                                             'type'      =>  'text',
                                             'required'  =>  'required',
                                             'class'     =>  'validate',
@@ -512,7 +532,7 @@
 
                                 <div class="col s12 m12" ALIGN="center">
 
-                                    <?php 
+                                    <?php
                                     $option_button = array (
                                             'class'     => 'btn waves-effect waves-light grey darken-4',
                                             'type'      => 'submit',
@@ -555,25 +575,25 @@
 
                             <div class="row">
                                 <!-- Campo invisible para la pestaña activa-->
-                                    <?php
+                                <?php
                                         $vistaActiva=array(
                                             'name'      =>  'Activa',
                                             'id'        =>  'Activa_Id',
                                             'value'     =>  3,
                                             'required'  => 'required',
                                             'class'     =>  'validate' ,
-                                            'style'     => 'display:none' 
-                                            );                
+                                            'style'     => 'display:none'
+                                            );
                                         echo form_input($vistaActiva);
                                     ?>
 
                                 <div class="col m4 s0"></div>
                                 <div class="input-field col m4 s12" style="text-align: right;height:10px">
                                     <!-- Campo para la contraseña-->
-                                    <?php 
+                                    <?php
                                         $pass_1 = array (
-                                            'name'      => 'PasswdActual',   
-                                            'id'        => 'pass_id_U0',        
+                                            'name'      => 'PasswdActual',
+                                            'id'        => 'pass_id_U0',
                                             'class'     => 'validate form-control',
                                             'required'  => 'required',
                                             'oninvalid' =>  "setCustomValidity('Es para estar seguros')",
@@ -594,7 +614,7 @@
                             <div>
                                 <p ALIGN="center">
                                     <FONT SIZE=1 COLOR="#e53935">
-                                        <?php echo $this->session->flashdata('pass'); 
+                                        <?php echo $this->session->flashdata('pass');
                                             $this->session->set_flashdata('pass','');?>
                                     </FONT>
                                 </p>
@@ -604,10 +624,10 @@
                             <div class="row">
                                 <div class="col m4 s0"></div>
                                 <div class="input-field col m4 s12" style="text-align: right;height:20px">
-                                    <?php 
+                                    <?php
                                         $pass_1 = array (
-                                            'name'      => 'Passwd',   
-                                            'id'        => 'pass_id_U1',        
+                                            'name'      => 'Passwd',
+                                            'id'        => 'pass_id_U1',
                                             'class'     => 'validate form-control',
                                             'required'  => 'required',
                                             'oninvalid' =>  "setCustomValidity('Es para estar seguros')",
@@ -626,7 +646,7 @@
                                 <div class="input-field col m4 s12" style="text-align: right;height:30px">
                                     <?php
                                     $pass_2 = array (
-                                        'name'      => 'Passwd2',   
+                                        'name'      => 'Passwd2',
                                         'id'        => 'pass_id_U2',
                                         'class'     => 'validate form-control',
                                         'required'  => true,
@@ -732,7 +752,7 @@
 
                                 <div class="col s12 m12" ALIGN="center">
 
-                                    <?php 
+                                    <?php
                                     $option_button = array (
                                             'class'     => 'btn waves-effect waves-light grey darken-4',
                                             'type'      => 'submit',
