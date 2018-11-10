@@ -49,9 +49,9 @@
                             <i class="material-icons">expand_more</i>
                             <?php echo $pregunta['Pregunta']?>
                         </div>
-                        
+
                         <div class="collapsible-body">
-                            <i class="material-icons">subdirectory_arrow_right</i>
+                            <i class="tiny material-icons">arrow_forward</i>
                             <span>
                             <?php echo $pregunta['Respuesta']?>
                             </span>
