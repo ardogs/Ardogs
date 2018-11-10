@@ -76,7 +76,7 @@
 
   <div>
     <h1 ALIGN="center">
-      Comprobante de cita <img src="https://image.ibb.co/iu8Txf/baidu-logotipo-de-la-pata-1.png">
+      Comprobante de cita 
     </h1>
     <br>
     <div id="Beneficiencia">
