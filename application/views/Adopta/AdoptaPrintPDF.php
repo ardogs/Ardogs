@@ -71,7 +71,7 @@
 <br>
 
   <div id=imagen>
-    <img width="200" height="200" class="responsive-img" src="https://image.ibb.co/nvtOvU/Logo_2.png"/> 
+    <img width="200" height="200" class="responsive-img" src="https://image.ibb.co/nvtOvU/Logo_2.png"/>
   </div>
 
   <div>
@@ -80,7 +80,7 @@
     </h1>
     <br>
     <div id="Beneficiencia">
-      <p> 
+      <p>
           <FONT id="Folio">Folio: </FONT><FONT id="FolioB"><?php echo $Cita['Id_Cita']?></FONT><br>
           <FONT id="BENEF">Beneficiencia: </FONT> <FONT id="nombreB"><?php echo $Cita['NombreB']?></FONT> <br>
           <FONT id="fechaB">Fecha: </FONT><FONT id="nfechaB"><?php echo $Cita['Fecha']?></FONT><br>
@@ -93,7 +93,7 @@
     <div id="fecha">
       <p> </p>
     </div>
-    
+
   </div>
 <br><br><br><br><br>
   <div id="avisoa">
@@ -112,15 +112,15 @@
     <br><br><br>
 
   </div>
- 
-  
+
+
 
 </page>
 
 <?php
 
   $content = ob_get_clean();
-  require_once'vendor/autoload.php';
+  require __DIR__.'vendor/autoload.php';
   try
   {
       $html2pdf = new HTML2PDF('P', 'A4', 'es', true, 'UTF-8', 3);
