@@ -70,13 +70,19 @@
 
 <br>
 
+
+
+
   <div id=imagen>
-    
+  <img width="200" height="200" src="https://image.ibb.co/dnxy5A/Logo-2.jpg">
+
+
+
   </div>
 
   <div>
     <h1 ALIGN="center">
-      Comprobante de cita
+      Comprobante de cita <img src="https://image.ibb.co/efBQkA/baidu-logotipo-de-la-pata-1.jpg">
     </h1>
     <br>
     <div id="Beneficiencia">
