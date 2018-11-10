@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="icon" href="http://drive.google.com/uc?export=view&id=1w3wrgI_gw8bbpQPYunMjIfcCU_Ywht1C">
 
     <!--Script Dropdown--->
     <script>
@@ -54,7 +55,7 @@
                         <li>
                             <a href="<?=base_url()?>FAQController">FAQ</a>
                         </li>
-                        <?php if($this->session->userdata('user')) { 
+                        <?php if($this->session->userdata('user')) {
                                 $user = $this->session->userdata('user');
                                 extract($user);
                             ?>
@@ -121,7 +122,7 @@
                 </div>
                 <a href="#user"><img class="circle" src="https://image.ibb.co/dRiGep/Male_User_96px.png"></a>
 
-                <?php if($this->session->userdata('user')) { 
+                <?php if($this->session->userdata('user')) {
                                 $user = $this->session->userdata('user');
                                 extract($user);
                             ?>
@@ -159,7 +160,7 @@
             <a href="<?=base_url()?>FAQController"><i class="material-icons">question_answer</i>FAQ</a>
         </li>
 
-        <?php if($this->session->userdata('user')) { 
+        <?php if($this->session->userdata('user')) {
                                 $user = $this->session->userdata('user');
                                 extract($user);
                             ?>
@@ -195,7 +196,7 @@
                 Cerrar Sesión
             </a>
         </li>
-        
+
         <?php }
               else { ?>
         <li>
@@ -213,7 +214,7 @@
             <a href="<?=base_url()?>LoginController">Iniciar sesión</a>
         </li>
     </ul>
-    
+
         <script>
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.tooltipped');
