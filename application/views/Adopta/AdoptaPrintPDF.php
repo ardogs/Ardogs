@@ -71,12 +71,12 @@
 <br>
 
   <div id=imagen>
-    <img width="200" height="200" class="responsive-img" src="https://image.ibb.co/nvtOvU/Logo_2.png"/>
+    
   </div>
 
   <div>
     <h1 ALIGN="center">
-      Comprobante de cita 
+      Comprobante de cita
     </h1>
     <br>
     <div id="Beneficiencia">
