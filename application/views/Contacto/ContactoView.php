@@ -32,13 +32,11 @@
 
         <!--Desde aqui es donde esta la parte del ciclo-->
         <?php foreach ($Contactos as $contacto) { ?>
-            <div class="col m12 s12">
+            <div class="col m12 s12 card-panel">
                 <br>
                 <br>
                 <br>
-                <li>
-                    <div class="divider"></div>
-                </li>
+
                 <h4 ALIGN="center"><?php echo $contacto['NombreB']; ?></h4>
                 <h5 ALIGN="center">Medios de contacto</h5>
                 <p ALIGN="center">
@@ -47,7 +45,7 @@
 
                     <FONT SIZE=4>Telefono: </FONT>
                     <FONT SIZE=3><?php echo $contacto['TelefonoB']; ?></FONT><br>
-                    
+
                     <FONT SIZE=4>Dirección: </FONT>
                     <FONT SIZE=3><?php echo $contacto['DireccionB']; ?></FONT><br>
                 </p>
@@ -56,7 +54,7 @@
             </div>
         <?php } ?>
         <!--Aqui termina-->
-    
+
     </div>
 </div>
 
