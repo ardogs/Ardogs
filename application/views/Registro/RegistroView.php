@@ -585,7 +585,7 @@
                                             echo form_checkbox ('check','','',$check_U);
                                         /*Nombre, valor*/
                                         ?>
-                                        <span><a href="">He leído los terminos de uso y condiciones</a></span>
+                                        <span><a class="waves-effect waves-light modal-trigger" href="#modal1">He leído los terminos de uso y condiciones</a></span>
                                     </label>
                                 </div>
 
@@ -1029,7 +1029,7 @@
 
 
                                     <?=form_checkbox ( 'check','','',$check_U)?>
-                                    <span><a href="">He leído los terminos de uso y condiciones</a></span>
+                                    <span><a class="waves-effect waves-light modal-trigger" href="#modal1">He leído los terminos de uso y condiciones</a></span>
                                 </label>
                             </div>
 
@@ -1055,6 +1055,19 @@
     </div>
     </div>
 
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Terminos y Condiciones</h4>
+        <p ALIGN="justify"><b>La organización:</b> debe de comprometerse a ofrecer la adopción de perros sin ningún tipo de cobro, manteniendo actualizada
+          la información de cada perro ofrecido y proporcionar información verídica de este mismo, además de respetar los derechos de cada perro. <br>
+          <b>Los usuarios:</b> Brindar información verídica al sistema, tener seguimiento de la cita que ha programado y asistir a  ella, una vez hecha la adopción, se compromete al cuidado del perro, teniendo instalaciones adecuadas para él, brindarle amor y cuidado que merece.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+  </div>
+
     <!--Script para las tabs--->
     <script>
         $('ul.tabs').tabs({
@@ -1062,6 +1075,13 @@
             responsiveThreshold: 1920
         });
 
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+      });
     </script>
 
     <!--Script's plugin contraseña-->

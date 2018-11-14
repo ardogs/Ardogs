@@ -76,14 +76,11 @@
             <h1 ALIGN="center">¿Quienes somos?</h1>
             <br>
             <br>
-            <p ALIGN="justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore animi mollitia fugiat
-                fugit saepe. Soluta quibusdam dolorum architecto ut pariatur tenetur ipsam ducimus consequatur, magni
-                assumenda repellendus nostrum doloribus earum. Tenetur vel quis repudiandae ullam voluptates blanditiis
-                qui numquam maiores ea omnis eaque nostrum, iure aperiam at optio debitis excepturi labore quod iste
-                consequuntur? Deleniti sint possimus doloribus cum. Nesciunt! A nam doloremque ullam deserunt sint molestias
-                accusamus vitae quasi repellat explicabo quam perspiciatis, ex saepe optio amet? Odit error quidem aut
-                ad, beatae doloribus? Nihil at id nemo consequatur? Eum dignissimos, vitae perferendis harum, natus nam
-                magni mollitia enim
+            <p ALIGN="center">Somos una organización sin fines de lucro, que busca disminuir los índices de perros callejeros,
+              así como los índices de sacrificios, además de fomentar la empatía, la solidaridad y el amor en las familias, a
+              través del sistema de recepción de citas a través de internet para conocer a un perro de una organización afiliada
+              para que puedas adoptarlo. De esta manera creamos una manera más rápida y fácil de vincular perros callejeros con
+              familias capaces de darle el amor y el cuidado que merecen.
             </p>
             <br>
             <br>
