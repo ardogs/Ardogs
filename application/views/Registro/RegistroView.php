@@ -1057,14 +1057,14 @@
 
     <div id="modal1" class="modal">
       <div class="modal-content">
-        <h4>Terminos y Condiciones</h4>
+        <h4 ALIGN="center">Terminos y Condiciones</h4>
         <p ALIGN="justify"><b>La organización:</b> debe de comprometerse a ofrecer la adopción de perros sin ningún tipo de cobro, manteniendo actualizada
           la información de cada perro ofrecido y proporcionar información verídica de este mismo, además de respetar los derechos de cada perro. <br>
           <b>Los usuarios:</b> Brindar información verídica al sistema, tener seguimiento de la cita que ha programado y asistir a  ella, una vez hecha la adopción, se compromete al cuidado del perro, teniendo instalaciones adecuadas para él, brindarle amor y cuidado que merece.
         </p>
       </div>
       <div class="modal-footer">
-        <a href="" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+        <p ALIGN="center">Para salir presiona fuera de este aviso</p>
       </div>
   </div>
 
