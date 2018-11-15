@@ -520,6 +520,7 @@
                                 if($Citas_Benef){
                                     $contModel=1;
                                     foreach ($Citas_Benef as $fila) {
+                                      if($fila['Status']!=0){
                                 ?>
                                 <tr>
                                     <td>
@@ -549,6 +550,7 @@
                                     </td>
                                     <td>
                                         <?php
+                                      }
                                      if($fila['Status']==2)
 
                                         echo '<FONT COLOR="#43a047">Completada</FONT>';
