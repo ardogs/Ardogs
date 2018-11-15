@@ -196,7 +196,7 @@
                                      else if($fila['Status']==1)
                                         echo '<FONT COLOR="#c0ca33">En proceso</FONT>';
                                      else
-                                        //echo '<FONT COLOR="red">Cancelada</FONT>';
+                                        echo '<FONT COLOR="red">Cancelada</FONT>';
                                      ?>
                                     </td>
                                     <td>
