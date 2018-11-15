@@ -551,11 +551,11 @@
                                         <?php
                                      if($fila['Status']==2)
 
-                                        echo '<FONT COLOR="#43a047"><i class="material-icons tooltipped" data-tooltip="Completada" data-position="top">check</i></FONT>';
+                                        echo '<FONT COLOR="#43a047">Completada<i class="material-icons">check</i></FONT>';
                                      else if($fila['Status']==1)
-                                        echo '<FONT COLOR="#c0ca33"><i class="material-icons tooltipped" data-tooltip="En proceso" data-position="left">autorenew</i></FONT>';
+                                        echo '<FONT COLOR="#c0ca33">En proceso<i class="material-icons">autorenew</i></FONT>';
                                      else
-                                        echo '<FONT COLOR="red"><i class="material-icons tooltipped" data-tooltip="Cancelada" data-position="right">close</i></FONT>';
+                                        echo '<FONT COLOR="red"Cancelada><i class="material-icons">close</i></FONT>';
                                      ?>
                                     </td>
                                     <td>
