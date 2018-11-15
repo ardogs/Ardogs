@@ -246,7 +246,7 @@
                                         <?php
                                     $contModel++;
                                     }
-                                    else echo "<FONT SIZE=4 COLOR='#616A6B'>---</FONT>";
+                                    else //echo "<FONT SIZE=4 COLOR='#616A6B'>---</FONT>";
                                     ?>
 
                                     </td>
