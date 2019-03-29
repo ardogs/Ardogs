@@ -28,6 +28,10 @@
             </div>
         </nav>
     </div>
+
+    <script type="text/javascript">
+      document.oncontextmenu =  function(){return false;}
+    </script>
 </head>
 
 <body>

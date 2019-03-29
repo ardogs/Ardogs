@@ -11,7 +11,7 @@
 <script>
     var w =  new Date();
     var hour = w.getHours+":"+w.getMinutes;
-    
+
 </script>
 
 <script>
@@ -36,6 +36,10 @@
         var instances = M.Modal.init(elems);
     });
 
+</script>
+
+<script type="text/javascript">
+  document.oncontextmenu =  function(){return false;}
 </script>
 
 <div class="parallax-container">
@@ -76,7 +80,7 @@
                 <div class="row">
                     <div class="col s12 m12">
                         <img class="responsive-img" src=<?php echo base_url()."public/Imagenes_Perros/".$Perro['Nombre_Foto_File']?> alt="" width="400" height="360">
-                        
+
                         <p ALIGN="justify">
                             <FONT SIZE=5>Nombre: </FONT>
                             <FONT SIZE="4" color="#616161"> <?php echo $Perro['Nombre_Perro'];?></FONT><br>
@@ -203,11 +207,11 @@
                                             'name'      =>  'Fecha',
                                             'id'        =>  'id_fecha',
                                             'type'      =>  'text',
-                                            'required'  =>  'required',                                            
+                                            'required'  =>  'required',
                                             'class'     =>  'validate datepicker',
                                             'title'     =>  'Fecha de la cita',
                                             'oninvalid' =>  "setCustomValidity('¡Te vamos a estar esperando!, clickea para abrir el calendario ')",
-                                            'oninput'   =>  "setCustomValidity('')");   
+                                            'oninput'   =>  "setCustomValidity('')");
                                         $funtion_birth = 'onkeypress="return checar_1(event)"';
                                         echo form_input($dateN_user,$this->input->post('Fecha'),$funtion_birth);
                                         echo form_label('Fecha de la cita (Presioname)','id_fecha');
@@ -218,18 +222,18 @@
 
                     <div class="input-field col m12 s12">
                         <?php
-                        
-                        $date = new DateTime("now", new DateTimeZone('America/Mexico_City')); 
+
+                        $date = new DateTime("now", new DateTimeZone('America/Mexico_City'));
                                         $dateN_user=array(
                                             'name'      =>  'Hora',
                                             'id'        =>  'id_hora',
                                             'type'      =>  'text',
-                                            'required'  =>  'required',                                            
+                                            'required'  =>  'required',
                                             'class'     =>  'validate timepicker',
                                             'title'     =>  'Hora de la cita',
                                             'oninvalid' =>  "setCustomValidity('¿A que hora te vamos a ver?, clickea para abrir el reloj ')",
                                             'oninput'   =>  "setCustomValidity('')",
-                                            'value'     => $date->format('H:i'));   
+                                            'value'     => $date->format('H:i'));
                                         $funtion_birth = 'onkeypress="return checar_1(event)"';
                                         echo form_input($dateN_user, $this->input->post('Hora'),$funtion_birth);
                                         echo form_label('Hora de la cita, formato 24 hrs (Presioname)','id_hora');
@@ -302,4 +306,3 @@
 <br>
 <br>
 <br>
-

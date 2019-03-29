@@ -148,7 +148,7 @@
             <center>
               <table cellspacing="0" cellpadding="0" width="530" height="303" class="w320">
                 <tr>
-                  
+
                 </tr>
               </table>
             </center>
@@ -203,7 +203,7 @@
                           <img  style="border:0px solid #a1a1a1;" src="https://image.ibb.co/hjpGkK/huella.png"  width="90" height="90" alt="profile"/>
                           </td>
                         </tr>
-                        
+
                       </table>
                     </td>
                     <td class="mobile-block mobile-padding" style="text-align:justify;">
@@ -263,7 +263,7 @@
                         </a>
                         <a href="#">
                           <img width="41" height="41" src="https://image.ibb.co/g1MOFK/twitter_mail.png" alt="Twitter" />
-                        
+
                       </td>
                     </tr>
                   </table>
@@ -292,5 +292,9 @@
     </td>
   </tr>
 </table>
+
+<script type="text/javascript">
+  document.oncontextmenu =  function(){return false;}
+</script>
 </body>
 </html>

@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="icon" href="https://image.ibb.co/dEEbaA/baidu-logotipo-de-la-pata-2.png">
 
+    <script type="text/javascript">
+      document.oncontextmenu =  function(){return false;}
+    </script>
+
     <div class="navbar-fixed">
         <nav class="grey darken-4">
             <div class="nav-wrapper">

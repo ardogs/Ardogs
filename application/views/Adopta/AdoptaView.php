@@ -1,5 +1,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script src="<?php echo base_url();?>Estilos/js/philter/philter.min.js"></script>
+
+<script type="text/javascript">
+  document.oncontextmenu =  function(){return false;}
+</script>
+
 <script>
         document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.parallax');
@@ -53,8 +58,8 @@
     <div class="row">
 
             <div class="col m6 s12 right">
-                <div class="col m3 s6"></div> 
-                <div class="input-field col m6 s12">  
+                <div class="col m3 s6"></div>
+                <div class="input-field col m6 s12">
                 <select name="Filtro" id="filtro_id" class="validate" required>
                         <option <?php echo ((isset($Filtro)) && $Filtro=="1")?"selected":"";?> value="1">Todos</option>
                         <option <?php echo ((isset($Filtro)) && $Filtro=="2")?"selected":"";?> value="2">Por Nombre</option>
@@ -69,7 +74,7 @@
                         <option <?php echo ((isset($Filtro)) && $Filtro=="11")?"selected":"";?> value="11">Más Antiguos</option>
                 </select>
                 <label>Filtro</label>
-                
+
                 </div>
                 <script>
                     document.addEventListener('DOMContentLoaded', function() {
@@ -78,8 +83,8 @@
                       });
                 </script>
                 <br>
-                
-                    <?php 
+
+                    <?php
                         $option_button = array (
                             'class'     => 'btn waves-effect waves-light btn pulse green darken-1 col m3 s6 right',
                             'type'      => 'submit',
@@ -91,7 +96,7 @@
                 <!--a class="waves-effect waves-light btn pulse green darken-1 col m3 s6 right">Filtrar</a-->
         </div>
     </div>
-    
+
 
 
 
@@ -103,10 +108,10 @@
 <div class="container">
     <div class="row">
 
-        <?php if(isset($results)) { 
+        <?php if(isset($results)) {
             $cont=0;
             foreach ($results->result() as $fila) { ?>
-            
+
 
             <div class="col m4 s12">
                 <div class="card medium">
@@ -116,8 +121,8 @@
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4"><?php echo "".$fila->Nombre_Perro?><i class="material-icons right">more_vert</i></span>
                         <p align="right">
-                            
-                            <?php 
+
+                            <?php
                             extract($this->session->userdata('user'));
                                 if($Id_Beneficencia==null){
                                    if($fila->Status==2){
@@ -128,7 +133,7 @@
                                   }
                                   else{
                                     echo "<FONT SIZE=3 COLOR='#5AE80E'>ADOPTADO</FONT>";
-                                  } 
+                                  }
                                 }
                             ?>
                         </p>
@@ -141,7 +146,7 @@
                     <div class="card-reveal">
                         <font size="3" face="Bahnschrift Light" >
                             <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i><?php echo "Acerca de ".$fila->Nombre_Perro?></span>
-                            
+
                                 <?php echo "<br>";
                                       echo "Raza: ".$fila->Raza."<br>";
                                       echo "Edad: ".$fila->Edad."<br>";
@@ -156,7 +161,7 @@
         <?php $cont++;}} else{?>
             <div>Perro(s) NO Encontrados.</div>
         <?php }?>
-        
+
     </div>
 </div>
 <br>

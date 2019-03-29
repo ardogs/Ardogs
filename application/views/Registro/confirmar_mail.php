@@ -201,7 +201,7 @@
                                                                 <a href="<?php echo $link;?>" style="background-color:#212121;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;">Verificar mi correo</a>
                                                             </div>
                                                         </td>
-                                                      
+
 
 
 
@@ -316,6 +316,10 @@
             </td>
         </tr>
     </table>
+
+    <script type="text/javascript">
+      document.oncontextmenu =  function(){return false;}
+    </script>
 </body>
 
 </html>
