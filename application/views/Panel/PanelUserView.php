@@ -168,8 +168,6 @@
                                 if($Citas_User){
                                     $contModel=1; //variable para crear multiples modelos sin fallos
                                     foreach ($Citas_User as $fila) {
-
-                                      if($fila['Status']!=0){
                                 ?>
 
                                 <tr>
@@ -193,13 +191,12 @@
                                     </td>
                                     <td>
                                         <?php
-                                      }
                                      if($fila['Status']==2)
                                         echo '<FONT COLOR="#43a047">Completada</FONT>';
                                      else if($fila['Status']==1)
                                         echo '<FONT COLOR="#c0ca33">En proceso</FONT>';
                                      else
-                                        //echo '<FONT COLOR="red">Cancelada</FONT>';
+                                        echo '<FONT COLOR="red">Cancelada</FONT>';
                                      ?>
                                     </td>
                                     <td>
@@ -246,7 +243,7 @@
                                         <?php
                                     $contModel++;
                                     }
-                                    else //echo "<FONT SIZE=4 COLOR='#616A6B'>---</FONT>";
+                                    else echo "<FONT SIZE=4 COLOR='#616A6B'>---</FONT>";
                                     ?>
 
                                     </td>
