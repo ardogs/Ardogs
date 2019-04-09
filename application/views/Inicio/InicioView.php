@@ -19,7 +19,7 @@
         <ul class="slides">
             <li>
                 <div class="caption center-align">
-                    <h3>aRDogsajsdnjsndfjasbda!</h3>
+                    <h3>aRDogs en todos lados!</h3>
                     <h5 class="light grey-text text-lighten-3">Comprende</h5>
                 </div>
             </li>
