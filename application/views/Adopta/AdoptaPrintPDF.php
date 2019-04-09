@@ -4,9 +4,7 @@
 ?>
 <page backtop="10mm" backbottom="10mm" backleft="20mm" backright="20mm">
 
-  <script type="text/javascript">
-    document.oncontextmenu =  function(){return false;}
-  </script>
+  
 
   <style type="text/css">
     #imagen img{
