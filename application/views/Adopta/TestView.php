@@ -10,12 +10,7 @@
 
 
 
-<script>
-    var stepper = document.querySelector('.stepper.demos');
-    var stepperInstace = new MStepper(stepper, {
-        firstActive: 0
-    });
-</script>
+
 
 <style type="text/css">
     [type="radio"]:checked+span:after,
@@ -523,6 +518,13 @@
 </div>
 </div>
 </div>
+
+<script>
+    var stepper = document.querySelector('.stepper.demos');
+    var stepperInstace = new MStepper(stepper, {
+        firstActive: 0
+    });
+</script>
 
 <script>
     $(document).ready(function() {
