@@ -1,9 +1,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://unpkg.com/materialize-stepper@3.0.1/dist/js/mstepper.min.js"></script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.parallax');
         var instances = M.Parallax.init(elems);
+    });
+</script>
+
+
+
+<script>
+    var stepper = document.querySelector('.stepper.demos');
+    var stepperInstace = new MStepper(stepper, {
+        firstActive: 0
     });
 </script>
 
@@ -492,12 +502,12 @@
                                 <button class="waves-effect waves-dark btn-flat previous-step">Atras</button>
 
                                 <div class="col s12 m12">
-                                    
+
                                         <br>
                                         <br>
                                         <h3 >Tu resultado</h3>
                                         <p class="grey-text text-darken-3">Aqui pones el resultado</p>
-                                    
+
                                 </div>
 
 

@@ -59,14 +59,7 @@
     </div>
 </footer>
 
-<script src="https://unpkg.com/materialize-stepper@3.0.1/dist/js/mstepper.min.js"></script>
 
-<script>
-    var stepper = document.querySelector('.stepper.demos');
-    var stepperInstace = new MStepper(stepper, {
-        firstActive: 0
-    });
-</script>
 
 </body>
 
