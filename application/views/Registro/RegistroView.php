@@ -23,7 +23,7 @@
     }
 
     #step1, #step3 {
-        height: 450px;
+        height: 600px;
     }
 
     #step2 {
@@ -141,7 +141,7 @@
 
     <style>
         .tabs-content.carousel {
-            height: 1150px;
+            height: 1300px;
             overflow-y: visible;
         }
     </style>
