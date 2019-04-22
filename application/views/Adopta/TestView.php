@@ -507,11 +507,10 @@
 
 
                             </div>
-
-                            <?= form_close() ?>
                         </div>
                     </li>
                 </ul>
+                <?= form_close() ?>
             </div>
         </div>
     </div>
