@@ -52,7 +52,7 @@
         ?>
             <div class="col m12 s12">
 
-                <h3>Tu resultado es: <?php echo $puntuacion?> puntos</h3>
+                <h3>Tu resultado:</h3>
                 <br>
                 <h5 align= "justify">
                   <p class="grey-text text-darken-3"><?php echo $mensaje?></p>
