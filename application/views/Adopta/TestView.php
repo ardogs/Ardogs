@@ -22,7 +22,7 @@
     }
 
     ul.stepper.horizontal {
-        min-height: 1500px;
+        min-height: 1550px;
     }
 
     #step2 {
