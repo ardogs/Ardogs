@@ -26,7 +26,7 @@
     }
 
     #step2 {
-        height: 1350px;
+        height: 1450px;
     }
 
     #step3 {
@@ -64,7 +64,7 @@
                 $form_B = array('class' => "col m12 s12");
                 echo form_open(base_url() . 'TestController', $form_B);
                 ?>
-                <ul class="stepper horizontal linear demos" id="horizontal">
+                <ul class="stepper horizontal demos" id="horizontal">
                     <li class="step">
                         <div class="step-title waves-effect waves-dark">Parte 1</div>
                         <div class="step-content">
@@ -478,40 +478,38 @@
                                 </label>
                             </p>
 
+                            <div class="row">
+                                <div class="step-actions col m12 s12">
+                                    <?php
+                                    $option_button = array(
+                                        'class'     => 'waves-effect waves-dark btn blue',
+                                        'type'      => 'submit',
+                                        'name'      => 'action',
+                                        'content'   =>  '¡Enviar!<i class="material-icons right">send</i>'
+                                    );
+                                    echo form_button($option_button)
+                                    ?>
+                                    <button class="waves-effect waves-dark btn-flat previous-step">Atras</button>
+                                </div>
 
-                            <div class="step-actions col m10 s10">
-                                <?php
-                                $option_button = array(
-                                    'class'     => 'waves-effect waves-dark btn blue',
-                                    'type'      => 'submit',
-                                    'name'      => 'action',
-                                    'content'   =>  '¡Enviar!<i class="material-icons right">send</i>'
-                                );
-                                echo form_button($option_button)
-                                ?>
-
-                                <button class="waves-effect waves-dark btn-flat previous-step">Atras</button>
-
-                                <div class="col s12 m12">
-
+                                <div class="col m12 s12">
+                                    <br>
                                     <br>
                                     <br>
                                     <h3>Tu resultado</h3>
                                     <p class="grey-text text-darken-3">Aqui pones el resultado</p>
-                                        <a href="<?=base_url()?>InicioController">Volver al inicio</a>
+                                    <center>
+                                        <a href="<?= base_url() ?>InicioController">Volver al inicio</a>
+                                    </center>
                                 </div>
+
                             </div>
+
                             <?= form_close() ?>
                         </div>
                     </li>
                 </ul>
             </div>
-        </div>
-
-        <div class="row">
-
-
-
         </div>
     </div>
 </div>
