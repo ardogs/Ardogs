@@ -64,7 +64,7 @@
                 $form_B = array('class' => "col m12 s12");
                 echo form_open(base_url() . 'TestController', $form_B);
                 ?>
-                <ul class="stepper horizontal demos" id="horizontal">
+                <ul class="stepper horizontal linear demos" id="horizontal">
                     <li class="step">
                         <div class="step-title waves-effect waves-dark">Parte 1</div>
                         <div class="step-content">
