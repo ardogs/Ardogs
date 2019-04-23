@@ -45,8 +45,29 @@
     <div class="row">
 
         <br><br>
-        <h1 ALIGN="center">El test</h1>
-        <br><br>
+        <h1 ALIGN="center">El Test <h5 align="center"><?php echo (isset($testComplete))? "(".$testComplete.")":""?></h5></h1>
+
+        <?php
+          if(isset($testComplete)){
+        ?>
+            <div class="col m12 s12">
+
+                <h3>Tu resultado es: <?php echo $puntuacion?> puntos</h3>
+                <br>
+                <h5 align= "justify">
+                  <p class="grey-text text-darken-3"><?php echo $mensaje?></p>
+                </h5>
+                <center>
+                  <br>
+                  <h6>
+                    <a href="<?= base_url() ?>InicioController">Volver al inicio</a>
+                  </h6>
+
+                </center>
+            </div>
+        <?php
+      } else{
+        ?>
         <div class="col s12 m12">
 
             <p ALIGN="center">
@@ -479,30 +500,18 @@
                             </p>
 
                             <div class="row">
-                                <div class="step-actions col m12 s12">
-                                    <?php
-                                    $option_button = array(
-                                        'class'     => 'waves-effect waves-dark btn blue',
-                                        'type'      => 'submit',
-                                        'name'      => 'action',
-                                        'content'   =>  '¡Enviar!<i class="material-icons right">send</i>'
-                                    );
-                                    echo form_button($option_button)
-                                    ?>
-                                    <button class="waves-effect waves-dark btn-flat previous-step">Atras</button>
-                                </div>
-
-                                <div class="col m12 s12">
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <h3>Tu resultado</h3>
-                                    <p class="grey-text text-darken-3">Aqui pones el resultado</p>
-                                    <center>
-                                        <a href="<?= base_url() ?>InicioController">Volver al inicio</a>
-                                    </center>
-                                </div>
-
+                              <div class="step-actions col m12 s12">
+                                  <?php
+                                  $option_button = array(
+                                      'class'     => 'waves-effect waves-dark btn blue',
+                                      'type'      => 'submit',
+                                      'name'      => 'action',
+                                      'content'   =>  '¡Enviar!<i class="material-icons right">send</i>'
+                                  );
+                                  echo form_button($option_button)
+                                  ?>
+                                  <button class="waves-effect waves-dark btn-flat previous-step">Atras</button>
+                              </div>
                             </div>
 
                             <?= form_close() ?>
@@ -511,6 +520,13 @@
                 </ul>
             </div>
         </div>
+
+
+        <?php
+        }
+        ?>
+
+
     </div>
 </div>
 
