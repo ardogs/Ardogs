@@ -16,32 +16,41 @@
 </head>
 
 <style>
-body { background: url(https://image.ibb.co/m4vDuz/pexels_photo_1378849.jpg) center fixed no-repeat}
+    #particles-js {
+        background: url(https://image.ibb.co/m4vDuz/pexels_photo_1378849.jpg) center fixed no-repeat;
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+    }
+
+    .centrado {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 </style>
 
-<body class="responsive-img">
-
-
-
+<body id="particles-js">
     <br><br>
-    <div class=" container">
+    <div class="container centrado">
         <div class="row">
-            <div class="col m3 s1"></div>
-
-
+            <div class="col m3 s1 "></div>
             <?php
-                $form_U=array('class' => "col m6 s10 card-panel x-depth-5",
-                                'id' => 'cont_1');
-                echo form_open(base_url().'LoginController', $form_U);
+            $form_U = array(
+                'class' => "col m6 s10 card-panel x-depth-5 ",
+                'id' => 'cont_1'
+            );
+            echo form_open(base_url() . 'LoginController', $form_U);
             ?>
 
             <div class="row">
                 <br>
 
-                <a href="<?=base_url()?>InicioController" class="brand-logo" ALIGN="center">
-                   <center>
-                        <img width="250" height="62"  src="https://image.ibb.co/dtKSaK/logo_mail.png">
-                   </center>
+                <a href="<?= base_url() ?>InicioController" class="brand-logo" ALIGN="center">
+                    <center>
+                        <img width="250" height="62" src="https://image.ibb.co/dtKSaK/logo_mail.png">
+                    </center>
 
                 </a>
                 <h4 ALIGN="center">¡Bienvenido!</h4>
@@ -55,17 +64,18 @@ body { background: url(https://image.ibb.co/m4vDuz/pexels_photo_1378849.jpg) cen
                     <div class="container">
                         <div class="input-field col m12 s12" style="text-align: right;height:10px">
                             <?php
-                                $email_user = array(
-                                    'name'  => 'Correo',
-                                    'id'    => 'user_id',
-                                    'required'  =>  'required',
-                                    'value' => $this->input->post('Correo'),
-                                    'type'  => 'email',
-                                    'title' => 'Nombre de Usuario');
-                                echo form_input($email_user,'');
-                                echo form_label('Usuario (Correo)','user_id');
-                                echo form_error('Correo', '<span class="helper-text"style="color:red;">', '</span>');
-                                ?>
+                            $email_user = array(
+                                'name'  => 'Correo',
+                                'id'    => 'user_id',
+                                'required'  =>  'required',
+                                'value' => $this->input->post('Correo'),
+                                'type'  => 'email',
+                                'title' => 'Nombre de Usuario'
+                            );
+                            echo form_input($email_user, '');
+                            echo form_label('Usuario (Correo)', 'user_id');
+                            echo form_error('Correo', '<span class="helper-text"style="color:red;">', '</span>');
+                            ?>
                         </div>
 
                     </div>
@@ -76,16 +86,17 @@ body { background: url(https://image.ibb.co/m4vDuz/pexels_photo_1378849.jpg) cen
                     <div class="container">
                         <div class="input-field col m12 s12" style="text-align: right;height:15px">
                             <?php
-                                $pass_user = array(
-                                    'name'  => 'Passwd',
-                                    'id'    => 'password_id',
-                                    'required'  =>  'required',
-                                    'type'  => 'password',
-                                    'title' => 'Contraseña');
-                                echo form_input($pass_user,'');
-                                echo form_label('Contraseña','password_id');
-                                echo form_error('Passwd', '<span class="helper-text"style="color:red;"><br>', '</span>');
-                                ?>
+                            $pass_user = array(
+                                'name'  => 'Passwd',
+                                'id'    => 'password_id',
+                                'required'  =>  'required',
+                                'type'  => 'password',
+                                'title' => 'Contraseña'
+                            );
+                            echo form_input($pass_user, '');
+                            echo form_label('Contraseña', 'password_id');
+                            echo form_error('Passwd', '<span class="helper-text"style="color:red;"><br>', '</span>');
+                            ?>
                         </div>
                     </div>
 
@@ -94,7 +105,7 @@ body { background: url(https://image.ibb.co/m4vDuz/pexels_photo_1378849.jpg) cen
                     <div class="col s12 m12" style="text-align: right;height:30px">
                         <p ALIGN="center">
                             <font size=2>
-                                <a href="<?=base_url()?>LoginController/forgot_password">¿Olvidaste tu contraseña?</a>
+                                <a href="<?= base_url() ?>LoginController/forgot_password">¿Olvidaste tu contraseña?</a>
                             </font>
                         </p>
                     </div>
@@ -102,19 +113,19 @@ body { background: url(https://image.ibb.co/m4vDuz/pexels_photo_1378849.jpg) cen
                 </div>
 
                 <?php
-                    if($this->session->flashdata('error')){
-                ?>
+                if ($this->session->flashdata('error')) {
+                    ?>
 
-                <div>
-                    <p ALIGN="center">
-                        <FONT SIZE=1 COLOR="#e53935">
-                            <?php echo $this->session->flashdata('error'); ?>
-                        </FONT>
-                    </p>
-                </div>
+                    <div>
+                        <p ALIGN="center">
+                            <FONT SIZE=1 COLOR="#e53935">
+                                <?php echo $this->session->flashdata('error'); ?>
+                            </FONT>
+                        </p>
+                    </div>
                 <?php
-                    }
-                 ?>
+            }
+            ?>
                 <div class="row">
                     <div class="col m4 s12"></div>
                     <div class="col m4 s12" ALIGN="center">
@@ -128,7 +139,7 @@ body { background: url(https://image.ibb.co/m4vDuz/pexels_photo_1378849.jpg) cen
                 <div style="text-align: right;height:5px">
                     <p ALIGN="center" class=" grey-text text-grey lighten-1">
                         <font size=2> ¿Aún no eres miembro?
-                            <a href="<?=base_url()?>RegistroController"> Registrate</a>
+                            <a href="<?= base_url() ?>RegistroController"> Registrate</a>
                         </font>
                     </p>
                 </div>
@@ -146,10 +157,12 @@ body { background: url(https://image.ibb.co/m4vDuz/pexels_photo_1378849.jpg) cen
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script type="text/javascript">
-      document.oncontextmenu =  function(){return false;}
-    </script>
 
+    <script type="text/javascript">
+        document.oncontextmenu = function() {
+            return false;
+        }
+    </script>
 </body>
 
 </html>

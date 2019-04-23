@@ -9,9 +9,6 @@
 </script>
 
 
-
-
-
 <style type="text/css">
     [type="radio"]:checked+span:after,
     [type="radio"].with-gap:checked+span:before,
@@ -33,7 +30,7 @@
     }
 
     #step3 {
-        height: 900px;
+        height: 1100px;
     }
 </style>
 
@@ -236,7 +233,6 @@
                             </div>
 
                     </li>
-
                     <li class="step" id="li1">
                         <div class="step-title waves-effect waves-dark">Parte 2</div>
                         <div class="step-content" id="step2">
@@ -498,25 +494,28 @@
 
                                 <div class="col s12 m12">
 
-                                        <br>
-                                        <br>
-                                        <h3 >Tu resultado</h3>
-                                        <p class="grey-text text-darken-3">Aqui pones el resultado</p>
-
+                                    <br>
+                                    <br>
+                                    <h3>Tu resultado</h3>
+                                    <p class="grey-text text-darken-3">Aqui pones el resultado</p>
+                                        <a href="<?=base_url()?>InicioController">Volver al inicio</a>
                                 </div>
-
-
                             </div>
+                            <?= form_close() ?>
                         </div>
                     </li>
                 </ul>
-                <?= form_close() ?>
             </div>
+        </div>
+
+        <div class="row">
+
+
+
         </div>
     </div>
 </div>
-</div>
-</div>
+
 
 <script>
     var stepper = document.querySelector('.stepper.demos');
