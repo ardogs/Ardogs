@@ -50,49 +50,42 @@
             </thead>
 
             <tbody>
-                <tr>
-                    <td>Angeles guardianes</td>
-                    <td>Av las Torres #9, Col Guadalape</td>
-                    <td>Miguel Torres Gonzalez</td>
-                    <td><a href="">Comprobante.pdf</a></td>
-                    <td>
-                        <a class="waves-effect Default tooltipped" data-tooltip="Aprobar" data-position="top"><i class="material-icons Large" style="color: #43a047">check</i></a>
-                        <a class="waves-effect Default tooltipped" data-tooltip="Rechazar" data-position="bottom"><i class="material-icons" style="color: #d32f2f">close</i></a>
-                    </td>
-                </tr>
+                <?php
+                if ($Registros_Archivo_Benef) {
 
-                <tr>
-                    <td>Peludos en casa</td>
-                    <td>Calle 74 pte #9 col. Naciones Unidas</td>
-                    <td>Reinaldo Zaragoza Contreras</td>
-                    <td><a href="">Archivo.pdf</a></td>
-                    <td>
-                        <a class="waves-effect Default tooltipped" data-tooltip="Aprobar" data-position="top"><i class="material-icons Large" style="color: #43a047">check</i></a>
-                        <a class="waves-effect Default tooltipped" data-tooltip="Rechazar" data-position="bottom"><i class="material-icons" style="color: #d32f2f">close</i></a>
-                    </td>
-                </tr>
+                    $contModel = 1;
+                    foreach ($Registros_Archivo_Benef as $fila) {
+                        ?>
+                        <tr>
+                            <td>
+                                <?php echo $fila['NombreB'] ?>
+                            </td>
+                            <td>
+                                <?php echo $fila['DireccionB'] ?>
+                            </td>
+                            <td>
+                                <?php echo $fila['Nombre'] ?>
+                            </td>
+                            <td>
+                              <a href="ftp://ardogs:tPddu5of.@files.000webhost.com/ardogs/Documentos_Beneficencia/<?php echo $fila['Nombre_ArchivoB']?>">
+                                  <?php echo $fila['Nombre_ArchivoB'] ?>
+                              </a>
+                            </td>
 
-                <tr>
-                    <td>Pequeños traviesos</td>
-                    <td>Gran avenida #5 Con Nueva Guinea</td>
-                    <td>Amador Rodriguez Fernandez</td>
-                    <td><a href="">Comprobate_ar.pdf</a></td>
-                    <td>
-                        <a class="waves-effect Default tooltipped" data-tooltip="Aprobar" data-position="top"><i class="material-icons Large" style="color: #43a047">check</i></a>
-                        <a class="waves-effect Default tooltipped" data-tooltip="Rechazar" data-position="bottom"><i class="material-icons" style="color: #d32f2f">close</i></a>
-                    </td>
-                </tr>
+                            <?php //aqui va la Accion?>
 
-                <tr>
-                    <td>Arca de Noe</td>
-                    <td>San Baltazar #54 Col El pedregal </td>
-                    <td>Lourdes Benitez Contreras</td>
-                    <td><a href="">Verificacion.pdf</a></td>
-                    <td>
-                        <a class="waves-effect Default tooltipped" data-tooltip="Aprobar" data-position="top"><i class="material-icons Large" style="color: #43a047">check</i></a>
-                        <a class="waves-effect Default tooltipped" data-tooltip="Rechazar" data-position="bottom"><i class="material-icons" style="color: #d32f2f">close</i></a>
-                    </td>
-                </tr>
+                            <td>
+                              <a href="<?php echo base_url()?>PanelController/AprobarArchivoBenef/<?php echo $fila['Id_Beneficencia']?>"
+                                  class="waves-effect Default tooltipped" data-tooltip="Aprobar" data-position="top"><i class="material-icons Large" style="color: #43a047">check</i></a>
+                              <a href="<?php echo base_url()?>PanelController/RechazarArchivoBenef/<?php echo $fila['Id_Beneficencia']?>"
+                                  class="waves-effect Default tooltipped" data-tooltip="Rechazar" data-position="bottom"><i class="material-icons" style="color: #d32f2f">close</i></a>
+                            </td>
+
+                        </tr>
+                    <?php
+                }
+            }
+            ?>
             </tbody>
         </table>
 

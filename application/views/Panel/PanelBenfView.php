@@ -129,7 +129,7 @@
 <h3 ALIGN="center">Panel de Control</h3>
 <br>
 
-<p ALIGN="center">Controla tus citas, modifica tu información personal del titular y la beneficencia, controla el inicio de sesión.</p>
+<p ALIGN="center">Controla tus citas, modifica tu informacion personal del titular y la beneficiencia, controla el inicio de sesión.</p>
 <br>
 
 <script>
@@ -146,18 +146,56 @@
         <div class="col s12">
 
             <ul class="collapsible popout">
-                <li <?php echo ($this->input->post('Activa') == 0) ? "class='active'" : "" ?> onClick="vistActiva('0')">
+              <?php
+
+              //echo "Status de benef: ".$this->session->userdata('benef')['Status'];
+              if($this->session->userdata('benef')['Status']<2){
+
+              ?>
+                <li class="active">
                     <div class="collapsible-header">
                         <h5> <i class="material-icons">attachment</i>
-                            Subir documentos
+                            <?php
+                              if($this->session->userdata('benef')['Status']==0){
+                                echo "Subir documentos ";
+                                ?>
+                                <FONT SIZE=5 COLOR="#D55F02">
+                                    <?php echo (isset($document_error)) ? "$document_error" : ""; ?>
+                                </FONT>
+                                <?php
+                              }
+                              else {
+                                echo "Archivos Adjuntados";
+                              }
+                            ?>
+
                         </h5>
                     </div>
                     <div class="collapsible-body">
-                        <p ALIGN="center">¡Nos alegra tu interés!, estas apunto de ser parte de Ardogs. <br>
-                            Como te lo mencionamos al principio, este registro conlleva una verificación posterior. <br> No te preocupes, no es difícil, solo necesitamos algún documento que avale el titulo de beneficencia.</p>
+                      <?php
+                      if ($this->session->userdata('benef')['Status']==0){
+                      ?>
+                        <p ALIGN="center">¡Nos alegra tu interes!, estas apunto de ser parte de Ardogs. <br>
+                            Como te lo mencionamos al principio, este regristro conlleva una verificación posterior al
+                            registro. <br>No te preocupes, no es dificil, solo necesitamos algún documento que avale el titulo de beneficiencia.</p>
                         <br>
 
                         <div class="row">
+                          <?php
+                          $form_ADD =  array('class' => "col s12 form-group");
+                          echo form_open_multipart(base_url() . 'PanelController', $form_ADD);//Se abre el form de adjuntar documentos Beneficencia
+                          $vistaActiva = array(//ventana activa para benef en adjuntar archivos
+                              'name'      =>  'Activa',
+                              'id'        =>  'Activa_Id',
+                              'value'     =>  1,
+                              'required'  => 'required',
+                              'class'     =>  'validate',
+                              'style'     => 'display:none'
+                          );
+                          echo form_input($vistaActiva);
+
+                          ?>
+
                             <div class="col m6 offset-m3 s12">
                                 <div class="file-field input-field">
                                     <div class="btn waves-effect waves-light grey darken-4">
@@ -168,7 +206,7 @@
                                         <input class="file-path validate" placeholder="Selecciona tu archivo" type="text">
                                     </div>
                                     <?php
-                                    echo form_error('Nombre_Foto_File', '<span class="helper-text"style="color:red;">', '</span>');
+                                    echo form_error('Nombre_File_Adjuntar', '<span align="center" class="helper-text"style="color:red;">', '</span>');
                                     ?>
                                 </div>
                                 <FONT SIZE=1 COLOR="#757575">
@@ -176,7 +214,7 @@
                                         1. Solo se aceptarán archivos en formato .jpg ó .pdf, ademas el tamaño maximo
                                         es de 400kb <br>
                                         2. Una vez enviado, el archivo no se podra modificar. <br>
-                                        3. Serás notificado por correo si tu solicitud fue aprobada.
+                                        3. Serás notificado por correo si tu solicitud fue aprovada.
                                     </center>
                                 </FONT>
                                 <br><br>
@@ -192,11 +230,37 @@
                                     ?>
                                 </div>
                             </div>
+                          <?php echo form_close(); ?>
                         </div>
+                    <?php
+                        }
+                        else{
+                    ?>
+                        <p ALIGN="center">Estas a un paso de ser parte de Ardogs. <br>
+                          Tus archivos estan en proceso de revisión y validación, para comprobar
+                          que todo este bien.<br>
+                          Ten paciencia, este proceso puede tardar un poco, nosotros te notificaremos
+                          por correo si la validación ha sido correcta.</p>
+                        <br>
+
+                        <div class="row">
+                            <h3 align= "center">En espera Perro, no te me agüites, jeje saludos...</h3>
+                        </div>
+                    <?php
+                        }
+                    ?>
                     </div>
+
+
+
                 </li>
                 <!--Aqui-->
-                <li <?php echo ($this->input->post('Activa') == 1) ? "class='active'" : "" ?> onClick="vistActiva('1')" style="display:none">
+                <?php
+                  }
+                  else{
+                ?>
+
+                <li <?php echo ($this->input->post('Activa') == 1) ? "class='active'" : "" ?> onClick="vistActiva('1')">
                     <div class="collapsible-header">
                         <h5> <i class="material-icons">pets</i>
                             Agregar nuevo muchacho(a)
@@ -535,7 +599,7 @@
                     <!---Aqio--->
                 </li>
 
-                <li <?php echo ($this->input->post('Activa') == 2) ? "class='active'" : "" ?> onClick="vistActiva('2')" style="display:none">
+                <li <?php echo ($this->input->post('Activa') == 2) ? "class='active'" : "" ?> onClick="vistActiva('2')">
                     <div class="collapsible-header">
                         <h5> <i class="material-icons">assignment</i>Administrar citas</h5>
                     </div>
@@ -682,14 +746,14 @@
 
                 </li>
 
-                <li <?php echo ($this->input->post('Activa') == 3 || $this->input->post('Activa') == 4) ? "class='active'" : "" ?> style="display:none">
+                <li <?php echo ($this->input->post('Activa') == 3 || $this->input->post('Activa') == 4) ? "class='active'" : "" ?>>
                     <div class="collapsible-header">
                         <h5><i class="material-icons">assignment_ind</i>Información del titular y Beneficiencia </h5>
                     </div>
                     <div class="collapsible-body">
-                        <p ALIGN="center">Consulta tu información personal y modifícala si te equivocaste durante el proceso de registro.<br></p>
+                        <p ALIGN="center">Consulta tu informción personal y modificala si te equivocaste durante el proceso de registro.<br></p>
                         <p ALIGN="center">
-                            <FONT COLOR="e53935" ALIGN="center">¡NOTA! No podrás modificar toda tu información</FONT>
+                            <FONT COLOR="e53935" ALIGN="center">¡NOTA! No podras modificar toda tu información</FONT>
                         </p>
 
                         <br><br>
@@ -1081,7 +1145,7 @@
                     </div>
                 </li>
 
-                <li <?php echo ($this->input->post('Activa') == 5) ? "class='active'" : "" ?> onClick="vistActiva('5')" style="display:none">
+                <li <?php echo ($this->input->post('Activa') == 5) ? "class='active'" : "" ?> onClick="vistActiva('5')">
                     <div class="collapsible-header">
                         <h5><i class="material-icons">security</i>
                             Seguridad e inicio de Sesión
@@ -1300,6 +1364,9 @@
                         </div>
                     </div>
                 </li>
+                <?php
+                  }
+                ?>
             </ul>
 
 
