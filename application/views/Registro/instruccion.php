@@ -51,7 +51,7 @@
             <br><br>
 
 
-            <p ALIGN="center">Si has llegado hasta aqui, ¡Felicidades!. Al parecer todo ha salido bien, en cualquier momento recibiras un correo. Nos vemos en un rato para concluir tu registro.</p>
+            <p ALIGN="center">Si has llegado hasta aquí, ¡Felicidades!. Al parecer todo ha salido bien, en cualquier momento recibirás un correo. Nos vemos en un rato para concluir tu registro.</p>
             <br>
             <br>
         </div>

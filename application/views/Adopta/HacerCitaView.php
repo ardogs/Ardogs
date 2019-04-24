@@ -60,8 +60,8 @@
 
 <div class="container">
     <p ALIGN="center"> Ahora solo estamos a un paso de generar una cita. <br> A continuación
-        encontraras la informacion general de tu posible nuevo amigo, asi como un formulario en el que deberas
-        seleccionar la fecha y la hora en la que estes seguro que puedas estar presente.</p>
+        encontraras la información general de tu posible nuevo amigo, asi como un formulario en el que deberás
+        seleccionar la fecha y la hora en la que estés seguro que puedas estar presente.</p>
 </div>
 
 <br>

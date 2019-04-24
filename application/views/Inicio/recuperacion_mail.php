@@ -169,7 +169,7 @@
                   <table cellspacing="0" cellpadding="0" width="100%">
                     <tr>
                       <td style="text-align: center;">
-                        <h3>Recuperacion de contraseña</h3>
+                        <h3>Recuperación de contraseña</h3>
                         <br>
                       </td>
                     </tr>

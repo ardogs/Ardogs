@@ -55,7 +55,7 @@
             <br>
 
 
-            <p ALIGN="justify">Si todo ha salido bien, has recibido un gran mensaje en tu correo. En ese mensaje encontraras algunas cosas escenciales y de suma importancia para tu futura cita, recuerda seguir todas las inctrucciones que te hemos mandado al pie de la letra. ¡Gracias!</p>
+            <p ALIGN="justify">Si todo ha salido bien, has recibido un gran mensaje en tu correo. En ese mensaje encontraras algunas cosas escenciales y de suma importancia para tu futura cita, recuerda seguir todas las instrucciones que te hemos mandado al pie de la letra. ¡Gracias!</p>
             <br>
 
 

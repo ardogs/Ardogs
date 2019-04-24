@@ -14,39 +14,9 @@
 
 
 <div class="parallax-container">
-    <div class="parallax slider" , "slider">
-        <img src="https://image.ibb.co/kfKJUp/banner2.jpg">
-        <ul class="slides">
-            <li>
-                <div class="caption center-align">
-                    <h3>aRDogs en todos lados!</h3>
-                    <h5 class="light grey-text text-lighten-3">Comprende</h5>
-                </div>
-            </li>
-
-            <li>
-                <div class="caption left-align">
-                    <h3>aRDogs</h3>
-                    <h5 class="light grey-text text-lighten-3">Adopta.</h5>
-                </div>
-            </li>
-
-            <li>
-                <div class="caption right-align">
-                    <h3>Más aRDogs!</h3>
-                    <h5 class="light grey-text text-lighten-3">Rescata</h5>
-                </div>
-            </li>
-
-            <li>
-                <div class="caption center-align">
-                    <h3>aRDogs en la web!</h3>
-                    <h5 class="light grey-text text-lighten-3">Ayuda</h5>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="slider">
+    <div class="parallax slider">
+        <img data-philter-vintage="1" src="https://i.imgur.com/Q8Pyww4.jpg">
+        <ul class="slides"></ul>
     </div>
 </div>
 
@@ -55,7 +25,6 @@
         var elems = document.querySelectorAll('.parallax');
         var instances = M.Parallax.init(elems);
     });
-
 </script>
 
 

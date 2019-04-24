@@ -232,7 +232,7 @@
                                                                     </table>
                                                                 </td>
                                                                 <td class="mobile-block mobile-padding" style="text-align:justify;">
-                                                                    Realmente estamos muy sorprendidos, muy pocos llegan hasta aqui, has ganado nuestro respeto y admiración
+                                                                    Realmente estamos muy sorprendidos, muy pocos llegan hasta aquí, has ganado nuestro respeto y admiración
                                                                     <br><br> Por favor sigue las siguientes intrucciones<br>
                                                                         1. Clickea en el boton cromprobante. Esto descargara a tu dispositivo un archivo en formato PDF.    <br>
                                                                         2. Imprimelo. <br>

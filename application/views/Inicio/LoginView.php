@@ -139,14 +139,14 @@
                 <div style="text-align: right;height:5px">
                     <p ALIGN="center" class=" grey-text text-grey lighten-1">
                         <font size=2> ¿Aún no eres miembro?
-                            <a href="<?= base_url() ?>RegistroController"> Registrate</a>
+                            <a href="<?= base_url() ?>RegistroController"> Regístrate</a>
                         </font>
                     </p>
                 </div>
                 <br>
                 <p ALIGN="center" class=" grey-text text-grey lighten-1">
-                    <font size=1> Al resgistrate aceptas nuestros
-                        <a href=""> Terminos de uso y condiciones</a>
+                    <font size=1> Al Regístrate aceptas nuestros
+                        <a href=""> Términos de uso y condiciones</a>
                     </font>
                 </p>
             </div>

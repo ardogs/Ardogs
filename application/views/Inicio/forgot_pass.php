@@ -45,8 +45,8 @@
 
 
             <br>
-            <h3 ALIGN="center">¡Veamos que tenemos aqui!</h3>
-            <p ALIGN="center">Ingresa tu correo para iniciar con el proceso. Si coincide con el que te has registrado en breves momentos recibiras tu contraseña temporal. Una vez que la tengas, por favor inicia sesión y cambiala en la parte "Datos personales"</p>
+            <h3 ALIGN="center">¡Veamos que tenemos aquí!</h3>
+            <p ALIGN="center">Ingresa tu correo para iniciar con el proceso. Si coincide con el que te has registrado en breves momentos recibirás tu contraseña temporal. Una vez que la tengas, por favor inicia sesión y cámbiala en la parte "Datos personales"</p>
 
 
 

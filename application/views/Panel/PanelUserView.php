@@ -123,7 +123,7 @@
 <h3 ALIGN="center">Panel de Control</h3>
 <br>
 
-<p ALIGN="center">Controla tus citas, modifica tu informacion personal y de inicio de sesión.</p>
+<p ALIGN="center">Controla tus citas, modifica tu información personal y de inicio de sesión.</p>
 <br>
 
 <script>
@@ -146,7 +146,7 @@
                         <h5> <i class="material-icons">assignment</i>Visualizar Citas</h5>
                     </div>
                     <div class="collapsible-body">
-                        <p ALIGN="center">Aqui podras ver todas las citas que puedas tener.</p>
+                        <p ALIGN="center">Aquí podrás ver todas las citas que puedas tener.</p>
                         <br>
                         <table class="responsive-table">
                             <thead>
@@ -221,7 +221,7 @@
                                                         <h4 ALIGN="center">
                                                             <FONT COLOR="red">¡Atención!</FONT>
                                                         </h4>
-                                                        <p ALIGN="justify">Esta a punto de cancelar una de sus citas. Al precionar CONTINUAR, no podrá restablecerla por lo que tendrá que volver a realizar el proceso de hacer cita si asi lo desea. De clic fuera de la ventana para omitir.</p>
+                                                        <p ALIGN="justify">Esta a punto de cancelar una de sus citas. Al precionar CONTINUAR, no podrá restablecerla por lo que tendrá que volver a realizar el proceso de hacer cita si así lo deseas. De clic fuera de la ventana para omitir.</p>
 
 
                                                         <br>
@@ -276,7 +276,7 @@
                     <div class="collapsible-body">
                         <p ALIGN="center">Consulta tu informción personal y modificala si te equivocaste durante el proceso de registro.<br></p>
                         <p ALIGN="center">
-                            <FONT COLOR="e53935" ALIGN="center">¡NOTA! No podras modificar toda tu información</FONT>
+                            <FONT COLOR="e53935" ALIGN="center">¡NOTA! No podrás modificar toda tu información</FONT>
                         </p>
 
                         <br><br>
@@ -567,7 +567,7 @@
                     </div>
                     <div class="collapsible-body">
 
-                        <p ALIGN="center">En esta sección podras actualizar tu contraseña, solo necesitas tu vieja contraseña y una nueva.</p>
+                        <p ALIGN="center">En esta sección podrás actualizar tu contraseña, solo necesitas tu vieja contraseña y una nueva.</p>
                         <div class="row">
                             <?php
                             $form_U=array('class' => "col s12 form-group");

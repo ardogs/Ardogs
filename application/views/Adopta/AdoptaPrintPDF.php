@@ -4,7 +4,7 @@
 ?>
 <page backtop="10mm" backbottom="10mm" backleft="20mm" backright="20mm">
 
-  
+
 
   <style type="text/css">
     #imagen img{
@@ -109,7 +109,7 @@
       El(la) solicitante del servicio: <b><?php echo $Cita['Nombre']." ".$Cita['Ap_Paterno']." ".$Cita['Ap_Materno']?></b> declara estar comprometido con la causa de aRDogs por lo que esta de acuerdo en el proceso de trámite para la posible adopción del perro con nombre <b><?php echo $Cita['Nombre_Perro']?></b>
       de raza <b><?php echo $Cita['Raza']?></b>, teniendo una edad de <b><?php echo $Cita['EdadP']?></b> y sexo <b><?php echo $Cita['SexoP']?></b>.<br><br>
 
-      Tal evento será llevado acabo en el Centro de Adopción: <b><?php echo $Cita['NombreB']?></b> con dirección: <b><?php echo $Cita['DireccionB']?></b> todo esto sujeto a nuestros terminos y condiciones los cuales pueden ser consultados en <a href="ardogs.org"><b>ardogs.org</b></a>
+      Tal evento será llevado acabo en el Centro de Adopción: <b><?php echo $Cita['NombreB']?></b> con dirección: <b><?php echo $Cita['DireccionB']?></b> todo esto sujeto a nuestros terminos y condiciones los cuales pueden ser consultados en <a href="https://ardogs.herokuapp.com"><b>ardogs.com</b></a>
     </p>
 
       <br><br><br><br><br><br>

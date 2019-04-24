@@ -37,7 +37,7 @@
 <div class="container">
     <div class="row">
         <div class="col m12 s12">
-            <p ALIGN="center">Aquí encontraras las preguntas más frecuentes relacionadas a nosotros, revisalas con cuidado. Si tienes algun tipo de duda y no se encuentra aqui, no dudes en contactarnos atraves del correo electronico y la redes seociales que te preporcionamos al final de esta pagina. .</p>
+            <p ALIGN="center">Aquí encontraras las preguntas más frecuentes relacionadas a nosotros, revísalas con cuidado. Si tienes algún tipo de duda y no se encuentra aquí, no dudes en contactarnos a través del correo electrónico y las redes sociales que te proporcionamos al final de esta pagina.</p>
         </div>
 
         <div class="col m12 s12">

@@ -129,7 +129,7 @@
 <h3 ALIGN="center">Panel de Control</h3>
 <br>
 
-<p ALIGN="center">Controla tus citas, modifica tu informacion personal del titular y la beneficiencia, controla el inicio de sesión.</p>
+<p ALIGN="center">Controla tus citas, modifica tu información personal del titular y la beneficencia, controla el inicio de sesión.</p>
 <br>
 
 <script>
@@ -153,9 +153,8 @@
                         </h5>
                     </div>
                     <div class="collapsible-body">
-                        <p ALIGN="center">¡Nos alegra tu interes!, estas apunto de ser parte de Ardogs. <br>
-                            Como te lo mencionamos al principio, este regristro conlleva una verificación posterior al
-                            registro. <br>No te preocupes, no es dificil, solo necesitamos algún documento que avale el titulo de beneficiencia.</p>
+                        <p ALIGN="center">¡Nos alegra tu interés!, estas apunto de ser parte de Ardogs. <br>
+                            Como te lo mencionamos al principio, este registro conlleva una verificación posterior. <br> No te preocupes, no es difícil, solo necesitamos algún documento que avale el titulo de beneficencia.</p>
                         <br>
 
                         <div class="row">
@@ -177,7 +176,7 @@
                                         1. Solo se aceptarán archivos en formato .jpg ó .pdf, ademas el tamaño maximo
                                         es de 400kb <br>
                                         2. Una vez enviado, el archivo no se podra modificar. <br>
-                                        3. Serás notificado por correo si tu solicitud fue aprovada.
+                                        3. Serás notificado por correo si tu solicitud fue aprobada.
                                     </center>
                                 </FONT>
                                 <br><br>

@@ -71,7 +71,7 @@
                         <a class="waves-effect Default tooltipped" data-tooltip="Rechazar" data-position="bottom"><i class="material-icons" style="color: #d32f2f">close</i></a>
                     </td>
                 </tr>
-                
+
                 <tr>
                     <td>Pequeños traviesos</td>
                     <td>Gran avenida #5 Con Nueva Guinea</td>

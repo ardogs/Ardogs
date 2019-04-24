@@ -27,7 +27,7 @@
 <div class="container">
     <div class="row">
         <div class="col m12 s12">
-            <p ALIGN="center">En estas seccion encontraras a todos los colaboradores con los que trabajamos, con los que vamos de la mano. En este sitio todos somos importantes, tu, ellos y nosotros.</p>
+            <p ALIGN="center">En estas sección encontraras a todos los colaboradores con los que trabajamos, con los que vamos de la mano. En este sitio todos somos importantes, tu, ellos y nosotros.</p>
         </div>
 
         <!--Desde aqui es donde esta la parte del ciclo-->
@@ -43,7 +43,7 @@
                     <FONT SIZE=4>Correo: </FONT>
                     <FONT SIZE=3><?php echo $contacto['CorreoB']; ?></FONT><br>
 
-                    <FONT SIZE=4>Telefono: </FONT>
+                    <FONT SIZE=4>Teléfono: </FONT>
                     <FONT SIZE=3><?php echo $contacto['TelefonoB']; ?></FONT><br>
 
                     <FONT SIZE=4>Dirección: </FONT>

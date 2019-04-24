@@ -193,8 +193,8 @@
         <h1 ALIGN="center">Registro para Usuarios</h1>
         <br><br>
 
-        <p ALIGN="center">Acontinuación, se muestra un pequeño formulario que debes completar, el cual te
-            dara acceso a este sitio. Es necesario que lo completes de la forma más sincera posible.
+        <p ALIGN="center">A continuación, se muestra un pequeño formulario que debes completar, el cual te
+            dará acceso a este sitio. Es necesario que lo completes de la forma más sincera posible.
         </p>
 
         <?php

@@ -108,7 +108,7 @@
                             <div class="step-title waves-effect waves-dark">Parte 1</div>
                             <div class="step-content">
 
-                                <h6>1. ¿Cuánto tiempo puedo dedicarle a tú mascota?</h6>
+                                <h6>1. ¿Cuánto tiempo puedes dedicarle a tú mascota?</h6>
                                 <p>
                                     <label for="R1_1">
                                         <?php echo form_radio('R1', '1', ($this->input->post('TestController') == '1') ? TRUE : FALSE, "id='R1_1' class ='with-gap' required"); ?>

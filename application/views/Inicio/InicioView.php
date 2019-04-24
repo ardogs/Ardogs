@@ -81,27 +81,26 @@
 
     <div class="container">
         <br><br>
-        <h3 class="grey-text text-darken-3 " ALIGN="center">En Ardogs podras </h3>
+        <h3 class="grey-text text-darken-3 " ALIGN="center">En Ardogs podrás </h3>
         <div class="row" ALIGN="center">
             <br><br><br><br>
 
             <div class="col m4 s12 container">
                 <img ALIGN="center" src="https://i.ibb.co/j3PxvZh/pencil.png" weight="150" height="150">
                 <h5 ALIGN="center" class="grey-text text-darken-3 "><a href="<?= base_url() ?>RegistroController">¡Registrarte!</a></h5>
-                <p ALIGN="justify" class="grey-text text-darken-3 ">Contamos con dos tipos de registros. Para personas que buscan adoptar a algun perrito o para beneficiencias
-                    que buscan ser colaboradores de nostros.</p>
+                <p ALIGN="justify" class="grey-text text-darken-3 ">Contamos con dos tipos de registros. Para personas que buscan adoptar a algún perrito o para beneficencias que buscan ser colaboradores de nosotros.</p>
             </div>
 
             <div class="col m4 s12 container">
                 <img ALIGN="center" src="https://i.ibb.co/V9ZHBdt/imac.png" weight="150" height="150">
                 <h5 ALIGN="center" class="grey-text text-darken-3 "><a href="<?= base_url() ?>LoginController">Iniciar sesión</a></h5>
-                <p ALIGN="justify" class="grey-text text-darken-3 ">No podrás gozar de ninguno de nuestros servicios sin antes iniciar sesion, asi que ¿Que esperas?</p>
+                <p ALIGN="justify" class="grey-text text-darken-3 ">No podrás gozar de ninguno de nuestros servicios sin antes iniciar sesión, asi que ¿Que esperas?</p>
             </div>
 
             <div class="col m4 s12 container">
                 <img ALIGN="center" src="https://i.ibb.co/mb68hR7/certificate.png" weight="150" height="150">
                 <h5 ALIGN="center" class="grey-text text-darken-3 "><a href="<?= base_url() ?>AdoptaController">¡Adoptar!</a></h5>
-                <p ALIGN="justify" class="grey-text text-darken-3 ">Puedes conocer a más de un cachorro, puedes buscar con el que sientas esa quimica especial, solicita una cita y visitalo.</p>
+                <p ALIGN="justify" class="grey-text text-darken-3 ">Puedes conocer a más de un cachorro, puedes buscar con el que sientas esa química especial, solicita una cita y visítalo.</p>
             </div>
         </div>
     </div>
