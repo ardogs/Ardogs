@@ -53,7 +53,7 @@
 
     <div class="footer-copyright">
         <div class="container">
-            © 2018 Copyright aRDog. Todos los derechos reservados.
+            © 2019 Copyright aRDog. Todos los derechos reservados.
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         </div>
     </div>
