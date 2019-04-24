@@ -244,7 +244,7 @@
                         <br>
 
                         <div class="row">
-                            <h3 align= "center">En espera Perro, no te me agüites, jeje saludos...</h3>
+                            <h6 align= "center">Tu solicitud esta siendo procesada</h6>
                         </div>
                     <?php
                         }
