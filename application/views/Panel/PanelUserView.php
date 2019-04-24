@@ -274,7 +274,7 @@
                         </h5>
                     </div>
                     <div class="collapsible-body">
-                        <p ALIGN="center">Consulta tu informción personal y modificala si te equivocaste durante el proceso de registro.<br></p>
+                        <p ALIGN="center">Consulta tú Información personal y modifícala si te equivocaste durante el proceso de registro.<br></p>
                         <p ALIGN="center">
                             <FONT COLOR="e53935" ALIGN="center">¡NOTA! No podrás modificar toda tu información</FONT>
                         </p>
