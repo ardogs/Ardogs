@@ -17,6 +17,7 @@
 
 	},
 	"suggest": {
+		"ext-ftp": "to connect to ftp:// server",
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
 	},
 	"require-dev": {
