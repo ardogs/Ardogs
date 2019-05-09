@@ -398,10 +398,13 @@ class PanelController extends CI_Controller {
                  //Load codeigniter FTP class
                  $this->load->library('ftp');
 
+                 $ftp_user =  getenv('FTP_USERNAME');
+                 $ftp_pass =  getenv('FTP_PASSWORD'),
+
                  //FTP configuration
                  $ftp_config['hostname'] = 'files.000webhost.com';
-                 $ftp_config['username'] = 'ardogs';
-                 $ftp_config['password'] = 'tPddu5of.';
+                 $ftp_config['username'] = $ftp_user;
+                 $ftp_config['password'] = $ftp_pass;
                  $ftp_config['debug']    = TRUE;
 
                  //Connect to the remote server
