@@ -399,7 +399,7 @@ class PanelController extends CI_Controller {
                  $this->load->library('ftp');
 
                  $ftp_user =  getenv('FTP_USERNAME');
-                 $ftp_pass =  getenv('FTP_PASSWORD'),
+                 $ftp_pass =  getenv('FTP_PASSWORD');
 
                  //FTP configuration
                  $ftp_config['hostname'] = 'files.000webhost.com';
